@@ -140,6 +140,7 @@ python3 sync_docs.py --only /search/docs/appearance/structured-data/recipe
 | `--jobs N` | Parallel fetches (default `4`). |
 | `--record-verification` | Stamps unchanged concepts with a `process:google-docs-sync` `verified` event, raising them to the machine-confirmed trust tier (§5.3). |
 | `--no-maintenance` | Skips the `validate`/`index`/`log`/`viz` chain. |
+| `--fail-threshold N` | How many pages may fail to fetch before the run counts as failed. Defaults to three, or 5% of the pages being synced. A page that fails keeps its existing content and is retried next run. |
 | `--bundle DIR` | Bundle root (defaults to the script's own directory). |
 
 What the sync does with each kind of change:

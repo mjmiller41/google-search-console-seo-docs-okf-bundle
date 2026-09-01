@@ -98,8 +98,13 @@ GENERATED_AT_RE = re.compile(r"^(\s*at: ).*$", re.M)
 # Fetching
 # --------------------------------------------------------------------------
 
-def fetch(url: str, retries: int = 3, timeout: int = 30) -> str:
-    """GET a URL as text, retrying transient failures with backoff."""
+def fetch(url: str, retries: int = 5, timeout: int = 30) -> str:
+    """GET a URL as text, retrying transient failures with backoff.
+
+    Five attempts (roughly 15 seconds of backoff) rather than three: the
+    upstream occasionally serves a short-lived 500, and a page that is simply
+    slow to recover should not fail a weekly sync.
+    """
     last_error: Exception | None = None
     for attempt in range(retries):
         try:
@@ -485,6 +490,9 @@ def main() -> int:
                         help="Stamp unchanged concepts with a machine verification event.")
     parser.add_argument("--no-maintenance", action="store_true",
                         help="Skip the validate/index/log/viz chain.")
+    parser.add_argument("--fail-threshold", type=int, default=None,
+                        help="Number of fetch failures tolerated before the run is "
+                             "treated as failed (default: 3, or 5%% of targets).")
     args = parser.parse_args()
 
     bundle: Path = args.bundle.resolve()
@@ -605,20 +613,37 @@ def main() -> int:
         f"\n{len(added)} added, {len(updated)} updated, {len(unchanged)} unchanged, "
         f"{len(deprecated)} deprecated, {len(failed)} failed"
     )
+    # A page or two can fail on a transient upstream 5xx. That should not turn a
+    # scheduled run red, because it fixes itself on the next one — but a broad
+    # failure means something real (the site moved, or we are being blocked),
+    # and that must surface.
+    tolerated = (args.fail_threshold if args.fail_threshold is not None
+                 else max(3, len(targets) // 20))
+    too_many = len(failed) > tolerated
     if failed:
         print("\nFailures:")
         for page, error in failed:
             print(f"  {page}: {error}")
+        print(f"\n{len(failed)} of {len(targets)} page(s) could not be fetched "
+              f"(tolerating up to {tolerated}).")
+        if too_many:
+            print("That is more than a transient blip — check whether the "
+                  "documentation site moved or is refusing these requests.")
+        else:
+            print("Treating this as transient; the concepts keep their previous "
+                  "content and the next run will retry them.")
 
     if args.check:
         drift = len(added) + len(updated) + len(deprecated)
         print("\nBundle is up to date." if not drift else f"\n{drift} page(s) need syncing.")
-        return 2 if drift else 0
+        if drift:
+            return 2
+        return 1 if too_many else 0
 
     changed = len(added) + len(updated) + len(deprecated)
     if not changed and not args.record_verification and not args.force:
         print("\nBundle already up to date; skipping maintenance chain.")
-        return 1 if failed else 0
+        return 1 if too_many else 0
 
     if not args.no_maintenance:
         parts = []
@@ -637,7 +662,7 @@ def main() -> int:
         if not run_maintenance(bundle, summary):
             return 1
 
-    return 1 if failed else 0
+    return 1 if too_many else 0
 
 
 if __name__ == "__main__":
