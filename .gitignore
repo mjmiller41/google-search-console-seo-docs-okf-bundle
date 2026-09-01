@@ -1,0 +1,3 @@
+# Python bytecode — never ship these; the repo is cloned wholesale on plugin install
+__pycache__/
+*.py[cod]
