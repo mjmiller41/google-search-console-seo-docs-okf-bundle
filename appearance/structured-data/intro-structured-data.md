@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:52:09Z'
 sources:
 - id: google-intro-structured-data
   resource: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
@@ -66,27 +66,11 @@ In addition to the properties and objects documented here, Google can make gener
 
 Google Search supports structured data in the following formats, unless documented otherwise. In general, we recommend using a format that's easiest for you to implement and maintain (in most cases, that's JSON-LD); all 3 formats are equally fine for Google, as long as the markup is valid and properly implemented per the feature's documentation.
 
-<table>
-<thead>
-<tr>
-<th colspan="2">Formats</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://json-ld.org/">JSON-LD</a>* <strong>(Recommended)</strong></td>
-<td>A JavaScript notation embedded in a <code>&lt;script&gt;</code> tag in the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements of an HTML page. The markup is not interleaved with the user-visible text, which makes nested data items easier to express, such as the <code>Country</code> of a <code>PostalAddress</code> of a <code>MusicVenue</code> of an <code>Event</code>. Also, Google can read JSON-LD data when it is <a href="https://developers.google.com/search/docs/guides/generate-structured-data-with-javascript">dynamically injected into the page's contents</a>, such as by JavaScript code or embedded widgets in your content management system.</td>
-</tr>
-<tr>
-<td><a href="https://html.spec.whatwg.org/multipage/microdata.html#microdata">Microdata</a></td>
-<td>An open-community HTML specification used to nest structured data within HTML content. Like RDFa, it uses HTML tag attributes to name the properties you want to expose as structured data. It is typically used in the <code>&lt;body&gt;</code> element, but can be used in the <code>&lt;head&gt;</code> element.</td>
-</tr>
-<tr>
-<td><a href="https://rdfa.info/">RDFa</a></td>
-<td>An HTML5 extension that supports linked data by introducing <a href="https://www.w3.org/TR/rdfa-lite/#the-attributes">HTML tag attributes</a> that correspond to the user-visible content that you want to describe for search engines. RDFa is commonly used in both the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections of the HTML page.</td>
-</tr>
-</tbody>
-</table>
+| Formats                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [JSON-LD](https://json-ld.org/)\* **(Recommended)**                          | A JavaScript notation embedded in a `<script>` tag in the `<head>` and `<body>` elements of an HTML page. The markup is not interleaved with the user-visible text, which makes nested data items easier to express, such as the `Country` of a `PostalAddress` of a `MusicVenue` of an `Event`. Also, Google can read JSON-LD data when it is [dynamically injected into the page's contents](https://developers.google.com/search/docs/guides/generate-structured-data-with-javascript), such as by JavaScript code or embedded widgets in your content management system. |
+| [Microdata](https://html.spec.whatwg.org/multipage/microdata.html#microdata) | An open-community HTML specification used to nest structured data within HTML content. Like RDFa, it uses HTML tag attributes to name the properties you want to expose as structured data. It is typically used in the `<body>` element, but can be used in the `<head>` element.                                                                                                                                                                                                                                                                                           |
+| [RDFa](https://rdfa.info/)                                                   | An HTML5 extension that supports linked data by introducing [HTML tag attributes](https://www.w3.org/TR/rdfa-lite/#the-attributes) that correspond to the user-visible content that you want to describe for search engines. RDFa is commonly used in both the `<head>` and `<body>` sections of the HTML page.                                                                                                                                                                                                                                                              |
 
 > In general, Google recommends using JSON-LD for structured data if your site's setup allows it, as it's the easiest solution for website owners to implement and maintain at scale (in other words, less prone to user errors).
 

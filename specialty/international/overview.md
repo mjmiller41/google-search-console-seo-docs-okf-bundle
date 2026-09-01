@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:52:09Z'
 sources:
 - id: google-international
   resource: https://developers.google.com/search/docs/specialty/international
@@ -25,27 +25,11 @@ sources:
 
 If your site contains content in different languages, or with different content for different locations, here's how to help Google understand your site.
 
-<table>
-<thead>
-<tr>
-<th colspan="2">Topics</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/specialty/international/managing-multi-regional-sites.md">Managing multi-regional and multilingual sites</a></td>
-<td>If your site offers different content to users in different languages, countries, or regions, you can optimize Google Search results for your site.</td>
-</tr>
-<tr>
-<td><a href="/specialty/international/localized-versions.md">Tell Google about localized versions of your page</a></td>
-<td>If you have multiple versions of a page for different languages or regions, tell Google about these different variations. Doing so will help Google Search point users to the most appropriate version of your page by language or region.</td>
-</tr>
-<tr>
-<td><a href="/specialty/international/locale-adaptive-pages.md">How Google crawls locale-adaptive pages</a></td>
-<td>If your site has locale-adaptive pages (that is, your site returns different content based on the perceived country or preferred language of the visitor), Google might not crawl, index, or rank all your content for different locales.</td>
-</tr>
-</tbody>
-</table>
+| Topics                                                                                                      |                                                                                                                                                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Managing multi-regional and multilingual sites](/specialty/international/managing-multi-regional-sites.md) | If your site offers different content to users in different languages, countries, or regions, you can optimize Google Search results for your site.                                                                                        |
+| [Tell Google about localized versions of your page](/specialty/international/localized-versions.md)         | If you have multiple versions of a page for different languages or regions, tell Google about these different variations. Doing so will help Google Search point users to the most appropriate version of your page by language or region. |
+| [How Google crawls locale-adaptive pages](/specialty/international/locale-adaptive-pages.md)                | If your site has locale-adaptive pages (that is, your site returns different content based on the perceived country or preferred language of the visitor), Google might not crawl, index, or rank all your content for different locales.  |
 
 # References & Citations
 

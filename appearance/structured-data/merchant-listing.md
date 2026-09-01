@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:52:09Z'
 sources:
 - id: google-merchant-listing
   resource: https://developers.google.com/search/docs/appearance/structured-data/merchant-listing
@@ -989,28 +989,28 @@ For your `Product` markup to be eligible for merchant listing experiences, you m
 
 ### Technical guidelines
 
-Only pages where a shopper can purchase a product are eligible for merchant listing experiences, not pages with links to other sites that sell the product. Google may attempt to verify merchant listing product data before showing the information in search results.
+- Only pages where a shopper can purchase a product are eligible for merchant listing experiences, not pages with links to other sites that sell the product. Google may attempt to verify merchant listing product data before showing the information in search results.
 
-Product rich results only support pages that focus on a single product (or multiple variants of the same product). For example, "shoes in our shop" is not a specific product. This includes product variants where [each product variant has a distinct URL](/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites.md). We recommend focusing on adding markup to product pages instead of pages that list products or a category of products.
+- Product rich results only support pages that focus on a single product (or multiple variants of the same product). For example, "shoes in our shop" is not a specific product. This includes product variants where [each product variant has a distinct URL](/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites.md). We recommend focusing on adding markup to product pages instead of pages that list products or a category of products.
 
-For details about how to mark up product variants, refer to [product variant structured data documentation](/appearance/structured-data/product-variants.md).
+- For details about how to mark up product variants, refer to [product variant structured data documentation](/appearance/structured-data/product-variants.md).
 
-When offering products for sale in multiple currencies, have a distinct URL per currency. For example, if a product is available for sale in Canadian and US dollars, use two distinct URLs, one per currency.
+- When offering products for sale in multiple currencies, have a distinct URL per currency. For example, if a product is available for sale in Canadian and US dollars, use two distinct URLs, one per currency.
 
-[`Car`](https://schema.org/Car) isn't supported automatically as a subtype of Product. For now, include both [`Car`](https://schema.org/Car) and [`Product`](https://schema.org/Product) types if you want to attach ratings to it and be eligible for the Search feature. For example in JSON-LD:
+- [`Car`](https://schema.org/Car) isn't supported automatically as a subtype of Product. For now, include both [`Car`](https://schema.org/Car) and [`Product`](https://schema.org/Product) types if you want to attach ratings to it and be eligible for the Search feature. For example in JSON-LD:
 
-``` devsite-click-to-copy
-{
-  "@context": "https://schema.org",
-  "@type": ["Product", "Car"],
-  ...
-}
-    
-```
+  ``` devsite-click-to-copy
+  {
+    "@context": "https://schema.org",
+    "@type": ["Product", "Car"],
+    ...
+  }
+      
+  ```
 
-If you're a merchant optimizing for all types of shopping results, we recommend putting `Product` structured data in the initial HTML for best results.
+- If you're a merchant optimizing for all types of shopping results, we recommend putting `Product` structured data in the initial HTML for best results.
 
-**For JavaScript-generated `Product` markup**: Be aware that [dynamically-generated markup](/appearance/structured-data/generate-structured-data-with-javascript.md) can make Shopping crawls less frequent and less reliable, which can be an issue for fast-changing content like product availability and price. If you're using JavaScript to generate `Product` markup, make sure your server has enough computing resources to handle increased traffic from Google.
+- **For JavaScript-generated `Product` markup**: Be aware that [dynamically-generated markup](/appearance/structured-data/generate-structured-data-with-javascript.md) can make Shopping crawls less frequent and less reliable, which can be an issue for fast-changing content like product availability and price. If you're using JavaScript to generate `Product` markup, make sure your server has enough computing resources to handle increased traffic from Google.
 
 ### Content guidelines
 

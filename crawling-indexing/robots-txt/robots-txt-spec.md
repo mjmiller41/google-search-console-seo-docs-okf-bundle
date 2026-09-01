@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:52:09Z'
 sources:
 - id: google-robots-txt-spec
   resource: https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec
@@ -410,39 +410,14 @@ If there's more than one specific group declared for a user agent, all the rules
 
 This is how the crawlers would choose the relevant group:
 
-<table>
-<thead>
-<tr>
-<th colspan="2">Group followed per crawler</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Googlebot News</td>
-<td><code>googlebot-news</code> follows group 1, because group 1 is the most specific group.</td>
-</tr>
-<tr>
-<td>Googlebot (web)</td>
-<td><code>googlebot</code> follows group 3.</td>
-</tr>
-<tr>
-<td>Googlebot Storebot</td>
-<td><code>Storebot-Google</code> follows group 2, because there is no specific <code>Storebot-Google</code> group.</td>
-</tr>
-<tr>
-<td>Googlebot News (when crawling images)</td>
-<td>When crawling images, <code>googlebot-news</code> follows group 1. <code>googlebot-news</code> doesn't crawl the images for Google Images, so it only follows group 1.</td>
-</tr>
-<tr>
-<td>Otherbot (web)</td>
-<td>Other Google crawlers follow group 2.</td>
-</tr>
-<tr>
-<td>Otherbot (news)</td>
-<td>Other Google crawlers that crawl news content, but don't identify as <code>googlebot-news</code> follow group 2. Even if there is an entry for a related crawler, it is only valid if it's specifically matching.</td>
-</tr>
-</tbody>
-</table>
+| Group followed per crawler            |                                                                                                                                                                                                        |
+|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Googlebot News                        | `googlebot-news` follows group 1, because group 1 is the most specific group.                                                                                                                          |
+| Googlebot (web)                       | `googlebot` follows group 3.                                                                                                                                                                           |
+| Googlebot Storebot                    | `Storebot-Google` follows group 2, because there is no specific `Storebot-Google` group.                                                                                                               |
+| Googlebot News (when crawling images) | When crawling images, `googlebot-news` follows group 1. `googlebot-news` doesn't crawl the images for Google Images, so it only follows group 1.                                                       |
+| Otherbot (web)                        | Other Google crawlers follow group 2.                                                                                                                                                                  |
+| Otherbot (news)                       | Other Google crawlers that crawl news content, but don't identify as `googlebot-news` follow group 2. Even if there is an entry for a related crawler, it is only valid if it's specifically matching. |
 
 #### Grouping of rules
 
