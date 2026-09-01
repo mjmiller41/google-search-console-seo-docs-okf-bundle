@@ -1,6 +1,6 @@
 {
   "name": "google-search-audit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Audit a live site or a pre-publish codebase against Google Search Central documentation. Seven skills covering indexing eligibility and spam policies, crawling and indexing, structured data, SEO fundamentals, search appearance, and traffic-drop debugging. Every finding cites the Google document it rests on, read at runtime from the mirrored bundle in this repository, so the guidance stays current with the weekly documentation sync.",
   "author": {
     "name": "Michael Miller",
