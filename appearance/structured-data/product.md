@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Introduction toProductstructured data
+title: Introduction to Product structured data
 description: Get an overview of how adding product structured data to your web pages can attract potential buyers while they are searching for items to purchase on Google.
 resource: https://developers.google.com/search/docs/appearance/structured-data/product
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-product
   resource: https://developers.google.com/search/docs/appearance/structured-data/product
-  title: Introduction toProductstructured data
+  title: Introduction to Product structured data
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# Introduction toProductstructured data
+# Introduction to Product structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/product](https://developers.google.com/search/docs/appearance/structured-data/product). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-product]
 
@@ -117,4 +117,4 @@ In addition to Google Search, learn more about eligibility to the [Google Shoppi
 
 # References & Citations
 
-[^google-product]: Google Search Central (2025). "Introduction toProductstructured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/product. Retrieved 2026-09-01.
+[^google-product]: Google Search Central (2025). "Introduction to Product structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/product. Retrieved 2026-09-01.

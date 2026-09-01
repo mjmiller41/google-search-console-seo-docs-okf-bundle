@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: metatags and attributes that Google supports
+title: meta tags and attributes that Google supports
 description: Google supports both page-level meta tags and tag attributes. Explore a list of the special tags that Google Search can support.
 resource: https://developers.google.com/search/docs/crawling-indexing/special-tags
 tags:
@@ -9,17 +9,17 @@ tags:
 - crawling-indexing
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-special-tags
   resource: https://developers.google.com/search/docs/crawling-indexing/special-tags
-  title: metatags and attributes that Google supports
+  title: meta tags and attributes that Google supports
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# metatags and attributes that Google supports
+# meta tags and attributes that Google supports
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/crawling-indexing/special-tags](https://developers.google.com/search/docs/crawling-indexing/special-tags). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-special-tags]
 
@@ -253,4 +253,4 @@ The following tags and attributes aren't supported by Google Search and are igno
 
 # References & Citations
 
-[^google-special-tags]: Google Search Central (2025). "metatags and attributes that Google supports". *Google for Developers*. https://developers.google.com/search/docs/crawling-indexing/special-tags. Retrieved 2026-09-01.
+[^google-special-tags]: Google Search Central (2025). "meta tags and attributes that Google supports". *Google for Developers*. https://developers.google.com/search/docs/crawling-indexing/special-tags. Retrieved 2026-09-01.

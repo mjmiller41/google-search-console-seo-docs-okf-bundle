@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Block Search indexing withnoindex
+title: Block Search indexing with noindex
 description: A noindex tag can block Google from indexing a page so that it won't appear in Search results. Learn how to implement noindex tags with this guide.
 resource: https://developers.google.com/search/docs/crawling-indexing/block-indexing
 tags:
@@ -9,17 +9,17 @@ tags:
 - crawling-indexing
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-block-indexing
   resource: https://developers.google.com/search/docs/crawling-indexing/block-indexing
-  title: Block Search indexing withnoindex
+  title: Block Search indexing with noindex
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# Block Search indexing withnoindex
+# Block Search indexing with noindex
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/crawling-indexing/block-indexing](https://developers.google.com/search/docs/crawling-indexing/block-indexing). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-block-indexing]
 
@@ -76,4 +76,4 @@ Finally, make sure that the `noindex` rule is visible to Googlebot. To test if y
 
 # References & Citations
 
-[^google-block-indexing]: Google Search Central (2025). "Block Search indexing withnoindex". *Google for Developers*. https://developers.google.com/search/docs/crawling-indexing/block-indexing. Retrieved 2026-09-01.
+[^google-block-indexing]: Google Search Central (2025). "Block Search indexing with noindex". *Google for Developers*. https://developers.google.com/search/docs/crawling-indexing/block-indexing. Retrieved 2026-09-01.

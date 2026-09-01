@@ -9,8 +9,8 @@ tags:
 - specialty
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-include-structured-data-relevant-to-ecommerce
   resource: https://developers.google.com/search/docs/specialty/ecommerce/include-structured-data-relevant-to-ecommerce

@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Video (VideoObject,Clip,BroadcastEvent) structured data
+title: Video (VideoObject, Clip, BroadcastEvent) structured data
 description: When you add video structured data, you can make it easier for Google to find your video and influence information that's shown in video results on Google, such as the video's thumbnail image, title, and description.
 resource: https://developers.google.com/search/docs/appearance/structured-data/video
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-video
   resource: https://developers.google.com/search/docs/appearance/structured-data/video
-  title: Video (VideoObject,Clip,BroadcastEvent) structured data
+  title: Video (VideoObject, Clip, BroadcastEvent) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2026-02-13T00:00:00Z'
 ---
 
-# Video (VideoObject,Clip,BroadcastEvent) structured data
+# Video (VideoObject, Clip, BroadcastEvent) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/video](https://developers.google.com/search/docs/appearance/structured-data/video). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-02-13.[^google-video]
 
@@ -901,4 +901,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-video]: Google Search Central (2026). "Video (VideoObject,Clip,BroadcastEvent) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/video. Retrieved 2026-09-01.
+[^google-video]: Google Search Central (2026). "Video (VideoObject, Clip, BroadcastEvent) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/video. Retrieved 2026-09-01.

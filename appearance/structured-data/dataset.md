@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Dataset (Dataset,DataCatalog,DataDownload) structured data
+title: Dataset (Dataset, DataCatalog, DataDownload) structured data
 description: Learn how to add schema.org dataset structured data. Implementing this can help Google recognize the dataset creator, distribution format, and other information.
 resource: https://developers.google.com/search/docs/appearance/structured-data/dataset
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-dataset
   resource: https://developers.google.com/search/docs/appearance/structured-data/dataset
-  title: Dataset (Dataset,DataCatalog,DataDownload) structured data
+  title: Dataset (Dataset, DataCatalog, DataDownload) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# Dataset (Dataset,DataCatalog,DataDownload) structured data
+# Dataset (Dataset, DataCatalog, DataDownload) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/dataset](https://developers.google.com/search/docs/appearance/structured-data/dataset). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-dataset]
 
@@ -811,4 +811,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-dataset]: Google Search Central (2025). "Dataset (Dataset,DataCatalog,DataDownload) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/dataset. Retrieved 2026-09-01.
+[^google-dataset]: Google Search Central (2025). "Dataset (Dataset, DataCatalog, DataDownload) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/dataset. Retrieved 2026-09-01.

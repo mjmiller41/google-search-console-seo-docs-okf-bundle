@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Education Q&A (Quiz,Question, andAnswer) structured data
+title: Education Q&A (Quiz, Question, and Answer) structured data
 description: Learn how you can use Quiz structured data to help students find your flashcard pages on Google.
 resource: https://developers.google.com/search/docs/appearance/structured-data/education-qa
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-education-qa
   resource: https://developers.google.com/search/docs/appearance/structured-data/education-qa
-  title: Education Q&A (Quiz,Question, andAnswer) structured data
+  title: Education Q&A (Quiz, Question, and Answer) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2026-08-25T00:00:00Z'
 ---
 
-# Education Q&A (Quiz,Question, andAnswer) structured data
+# Education Q&A (Quiz, Question, and Answer) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/education-qa](https://developers.google.com/search/docs/appearance/structured-data/education-qa). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-08-25.[^google-education-qa]
 
@@ -377,4 +377,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-education-qa]: Google Search Central (2026). "Education Q&A (Quiz,Question, andAnswer) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/education-qa. Retrieved 2026-09-01.
+[^google-education-qa]: Google Search Central (2026). "Education Q&A (Quiz, Question, and Answer) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/education-qa. Retrieved 2026-09-01.

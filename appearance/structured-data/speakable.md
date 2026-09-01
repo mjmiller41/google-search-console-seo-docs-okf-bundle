@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Speakable (Article,WebPage) structured data (BETA)
+title: Speakable (Article, WebPage) structured data (BETA)
 description: Speakable schema markup can be used to identify content that is best suited for audio playback. Learn about SEO for voice search with this guide.
 resource: https://developers.google.com/search/docs/appearance/structured-data/speakable
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-speakable
   resource: https://developers.google.com/search/docs/appearance/structured-data/speakable
-  title: Speakable (Article,WebPage) structured data (BETA)
+  title: Speakable (Article, WebPage) structured data (BETA)
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# Speakable (Article,WebPage) structured data (BETA)
+# Speakable (Article, WebPage) structured data (BETA)
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/speakable](https://developers.google.com/search/docs/appearance/structured-data/speakable). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-speakable]
 
@@ -172,4 +172,4 @@ In addition to `speakable` structured data, you can use other Google Assistant a
 
 # References & Citations
 
-[^google-speakable]: Google Search Central (2025). "Speakable (Article,WebPage) structured data (BETA)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/speakable. Retrieved 2026-09-01.
+[^google-speakable]: Google Search Central (2025). "Speakable (Article, WebPage) structured data (BETA)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/speakable. Retrieved 2026-09-01.

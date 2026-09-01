@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Article (Article,NewsArticle,BlogPosting) structured data
+title: Article (Article, NewsArticle, BlogPosting) structured data
 description: Learn how adding article schema markup to your news articles and blogs can enhance their appearance in Google Search results.
 resource: https://developers.google.com/search/docs/appearance/structured-data/article
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-article
   resource: https://developers.google.com/search/docs/appearance/structured-data/article
-  title: Article (Article,NewsArticle,BlogPosting) structured data
+  title: Article (Article, NewsArticle, BlogPosting) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# Article (Article,NewsArticle,BlogPosting) structured data
+# Article (Article, NewsArticle, BlogPosting) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/article](https://developers.google.com/search/docs/appearance/structured-data/article). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-article]
 
@@ -406,4 +406,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-article]: Google Search Central (2025). "Article (Article,NewsArticle,BlogPosting) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/article. Retrieved 2026-09-01.
+[^google-article]: Google Search Central (2025). "Article (Article, NewsArticle, BlogPosting) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/article. Retrieved 2026-09-01.

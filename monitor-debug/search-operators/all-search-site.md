@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: site:search operator
+title: 'site: search operator'
 description: 'Learn all about the site: search operator and how it can help with debugging and understanding how Google sees your website.'
 resource: https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site
 tags:
@@ -9,17 +9,17 @@ tags:
 - monitor-debug
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-all-search-site
   resource: https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site
-  title: site:search operator
+  title: 'site: search operator'
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# site:search operator
+# site: search operator
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site](https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-all-search-site]
 
@@ -96,4 +96,4 @@ The `site:` operator was designed primarily for search users and so it has some 
 
 # References & Citations
 
-[^google-all-search-site]: Google Search Central (2025). "site:search operator". *Google for Developers*. https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site. Retrieved 2026-09-01.
+[^google-all-search-site]: Google Search Central (2025). "site: search operator". *Google for Developers*. https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site. Retrieved 2026-09-01.

@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Product snippet (Product,Review,Offer) structured data
+title: Product snippet (Product, Review, Offer) structured data
 description: Learn how to add product snippet structured data to attract potential buyers while they are searching for products on Google.
 resource: https://developers.google.com/search/docs/appearance/structured-data/product-snippet
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-product-snippet
   resource: https://developers.google.com/search/docs/appearance/structured-data/product-snippet
-  title: Product snippet (Product,Review,Offer) structured data
+  title: Product snippet (Product, Review, Offer) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# Product snippet (Product,Review,Offer) structured data
+# Product snippet (Product, Review, Offer) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/product-snippet](https://developers.google.com/search/docs/appearance/structured-data/product-snippet). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-product-snippet]
 
@@ -1014,4 +1014,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-product-snippet]: Google Search Central (2025). "Product snippet (Product,Review,Offer) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/product-snippet. Retrieved 2026-09-01.
+[^google-product-snippet]: Google Search Central (2025). "Product snippet (Product, Review, Offer) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/product-snippet. Retrieved 2026-09-01.

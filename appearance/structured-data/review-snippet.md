@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Review snippet (Review,AggregateRating) structured data
+title: Review snippet (Review, AggregateRating) structured data
 description: A review snippet is a short excerpt of a review or rating. Explore this guide to learn about Google review snippets and how to enable rich snippets.
 resource: https://developers.google.com/search/docs/appearance/structured-data/review-snippet
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-review-snippet
   resource: https://developers.google.com/search/docs/appearance/structured-data/review-snippet
-  title: Review snippet (Review,AggregateRating) structured data
+  title: Review snippet (Review, AggregateRating) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2026-07-24T00:00:00Z'
 ---
 
-# Review snippet (Review,AggregateRating) structured data
+# Review snippet (Review, AggregateRating) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/review-snippet](https://developers.google.com/search/docs/appearance/structured-data/review-snippet). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-07-24.[^google-review-snippet]
 
@@ -966,4 +966,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-review-snippet]: Google Search Central (2026). "Review snippet (Review,AggregateRating) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/review-snippet. Retrieved 2026-09-01.
+[^google-review-snippet]: Google Search Central (2026). "Review snippet (Review, AggregateRating) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/review-snippet. Retrieved 2026-09-01.

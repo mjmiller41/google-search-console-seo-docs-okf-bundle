@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Product variant structured data (ProductGroup,Product)
+title: Product variant structured data (ProductGroup, Product)
 description: Learn how to mark up product variants that come in various sizes, colors, materials, or patterns.
 resource: https://developers.google.com/search/docs/appearance/structured-data/product-variants
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-product-variants
   resource: https://developers.google.com/search/docs/appearance/structured-data/product-variants
-  title: Product variant structured data (ProductGroup,Product)
+  title: Product variant structured data (ProductGroup, Product)
   author: Google Search Central (Google LLC)
   last_modified: '2026-05-20T00:00:00Z'
 ---
 
-# Product variant structured data (ProductGroup,Product)
+# Product variant structured data (ProductGroup, Product)
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/product-variants](https://developers.google.com/search/docs/appearance/structured-data/product-variants). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-05-20.[^google-product-variants]
 
@@ -929,4 +929,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-product-variants]: Google Search Central (2026). "Product variant structured data (ProductGroup,Product)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/product-variants. Retrieved 2026-09-01.
+[^google-product-variants]: Google Search Central (2026). "Product variant structured data (ProductGroup, Product)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/product-variants. Retrieved 2026-09-01.

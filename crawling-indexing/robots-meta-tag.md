@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Robotsmetatag,data-nosnippet, andX-Robots-Tagspecifications
+title: Robots meta tag, data-nosnippet, and X-Robots-Tag specifications
 description: Learn how to add robots meta tags and read how page and text-level settings can be used to adjust how Google presents your content in search results.
 resource: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag
 tags:
@@ -9,17 +9,17 @@ tags:
 - crawling-indexing
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-robots-meta-tag
   resource: https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag
-  title: Robotsmetatag,data-nosnippet, andX-Robots-Tagspecifications
+  title: Robots meta tag, data-nosnippet, and X-Robots-Tag specifications
   author: Google Search Central (Google LLC)
   last_modified: '2026-03-24T00:00:00Z'
 ---
 
-# Robotsmetatag,data-nosnippet, andX-Robots-Tagspecifications
+# Robots meta tag, data-nosnippet, and X-Robots-Tag specifications
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-03-24.[^google-robots-meta-tag]
 
@@ -529,4 +529,4 @@ robots `meta` tags and `X-Robots-Tag` HTTP headers are discovered when a URL is 
 
 # References & Citations
 
-[^google-robots-meta-tag]: Google Search Central (2026). "Robotsmetatag,data-nosnippet, andX-Robots-Tagspecifications". *Google for Developers*. https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag. Retrieved 2026-09-01.
+[^google-robots-meta-tag]: Google Search Central (2026). "Robots meta tag, data-nosnippet, and X-Robots-Tag specifications". *Google for Developers*. https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag. Retrieved 2026-09-01.

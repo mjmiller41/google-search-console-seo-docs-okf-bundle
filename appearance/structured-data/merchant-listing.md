@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Merchant listing (Product,Offer) structured data
+title: Merchant listing (Product, Offer) structured data
 description: Discover how you can add merchant listing structured data to attract potential buyers while they are searching for items to purchase on Google.
 resource: https://developers.google.com/search/docs/appearance/structured-data/merchant-listing
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-merchant-listing
   resource: https://developers.google.com/search/docs/appearance/structured-data/merchant-listing
-  title: Merchant listing (Product,Offer) structured data
+  title: Merchant listing (Product, Offer) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2026-07-07T00:00:00Z'
 ---
 
-# Merchant listing (Product,Offer) structured data
+# Merchant listing (Product, Offer) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/merchant-listing](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-07-07.[^google-merchant-listing]
 
@@ -2352,4 +2352,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-merchant-listing]: Google Search Central (2026). "Merchant listing (Product,Offer) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/merchant-listing. Retrieved 2026-09-01.
+[^google-merchant-listing]: Google Search Central (2026). "Merchant listing (Product, Offer) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/merchant-listing. Retrieved 2026-09-01.

@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: Recipe (Recipe,HowTo,ItemList) structured data
+title: Recipe (Recipe, HowTo, ItemList) structured data
 description: You can help users find your recipe by telling Google about your recipe reviews, cook time, and nutrition information with structured data.
 resource: https://developers.google.com/search/docs/appearance/structured-data/recipe
 tags:
@@ -9,17 +9,17 @@ tags:
 - appearance
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-recipe
   resource: https://developers.google.com/search/docs/appearance/structured-data/recipe
-  title: Recipe (Recipe,HowTo,ItemList) structured data
+  title: Recipe (Recipe, HowTo, ItemList) structured data
   author: Google Search Central (Google LLC)
   last_modified: '2025-12-10T00:00:00Z'
 ---
 
-# Recipe (Recipe,HowTo,ItemList) structured data
+# Recipe (Recipe, HowTo, ItemList) structured data
 
 > Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/recipe](https://developers.google.com/search/docs/appearance/structured-data/recipe). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-recipe]
 
@@ -769,4 +769,4 @@ If you're having trouble implementing or debugging structured data, here are som
 
 # References & Citations
 
-[^google-recipe]: Google Search Central (2025). "Recipe (Recipe,HowTo,ItemList) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/recipe. Retrieved 2026-09-01.
+[^google-recipe]: Google Search Central (2025). "Recipe (Recipe, HowTo, ItemList) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/recipe. Retrieved 2026-09-01.

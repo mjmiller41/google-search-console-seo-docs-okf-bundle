@@ -1,3 +1,15 @@
+---
+type: Bundle Guide
+title: Google Search Central Documentation — OKF Bundle
+description: How this bundle is structured, how each concept is shaped, and how to sync it with the upstream Google Search Central documentation.
+resource: https://github.com/mjmiller41/google-search-console-seo-docs-okf-bundle
+tags: [google-search, documentation, readme]
+status: stable
+generated:
+  by: claude-code/claude-fable-5
+  at: '2026-09-01T16:00:00Z'
+---
+
 # Google Search Central Documentation — OKF Bundle
 
 An [Open Knowledge Format (OKF) v0.2](https://github.com/mjmiller41/cli-agent-okf) knowledge bundle
@@ -61,6 +73,51 @@ okf validate --bundle . --strict   # lint frontmatter, footnotes, and link targe
 okf index --bundle .               # regenerate every index.md
 okf viz --bundle .                 # rebuild the interactive graph
 ```
+
+## Keeping the bundle current
+
+`sync_docs.py` re-crawls the upstream navigation and updates the bundle in
+place. It rebuilds every page through the same pipeline that produced the
+bundle, then writes only the concepts whose content actually changed — the
+timestamps that move on every run (`generated.at`, the footnote's `Retrieved`
+date) are excluded from the comparison, so an unchanged page is left untouched
+and its original `generated.at` stands as the true date of last meaningful
+change (OKF v0.2 §5.2).
+
+```bash
+pip install -r requirements.txt   # plus pandoc and the okf CLI
+
+python3 sync_docs.py              # sync in place, then run the maintenance chain
+python3 sync_docs.py --check      # report drift, write nothing (exit 2 if drift)
+python3 sync_docs.py --force      # rewrite every concept
+python3 sync_docs.py --only /search/docs/appearance/structured-data/recipe
+```
+
+| Flag | Effect |
+| :--- | :--- |
+| `--check` | Read-only drift report. Exits `2` when the bundle is behind, `0` when current — suitable as a CI gate. |
+| `--force` | Rewrites every concept, regardless of whether content changed. |
+| `--only PATH...` | Restricts the sync to specific upstream paths. Skips the deprecation scan. |
+| `--jobs N` | Parallel fetches (default `4`). |
+| `--record-verification` | Stamps unchanged concepts with a `process:google-docs-sync` `verified` event, raising them to the machine-confirmed trust tier (§5.3). |
+| `--no-maintenance` | Skips the `validate`/`index`/`log`/`viz` chain. |
+| `--bundle DIR` | Bundle root (defaults to the script's own directory). |
+
+What the sync does with each kind of change:
+
+* **Changed page** — the concept is rewritten with a fresh `generated.at`, and
+  the upstream `Last updated` date is carried into `sources[].last_modified`.
+* **New page in the navigation** — a new concept is created at the matching path.
+* **Page dropped from the navigation** — the concept is marked
+  `status: deprecated` with a `deprecated_at` timestamp and kept, per OKF v0.2
+  §5.4, so inbound links and history survive.
+
+Afterwards it runs `okf validate --strict`, `okf index`, `okf log`, and
+`okf viz`. Set `OKF_CLI` if the CLI is not on `PATH`
+(e.g. `OKF_CLI="python3 -m okf_cli.cli"`).
+
+A [scheduled workflow](.github/workflows/sync-docs.yml) runs the sync weekly and
+commits any resulting changes.
 
 ## Attribution and licensing
 

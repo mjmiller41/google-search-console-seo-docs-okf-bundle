@@ -9,8 +9,8 @@ tags:
 - crawling-indexing
 status: stable
 generated:
-  by: claude-code/claude-fable-5
-  at: '2026-09-01T14:20:03Z'
+  by: okf-sync/1.0
+  at: '2026-09-01T14:31:43Z'
 sources:
 - id: google-amp
   resource: https://developers.google.com/search/docs/crawling-indexing/amp

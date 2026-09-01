@@ -1,0 +1,7 @@
+beautifulsoup4>=4.12
+PyYAML>=6.0
+
+# Also required, installed separately (not a Python package):
+#   pandoc   - HTML to GitHub-flavored Markdown conversion
+#   okf      - OKF v0.2 CLI, for the validate/index/log/viz maintenance chain
+#              https://github.com/mjmiller41/cli-agent-okf
