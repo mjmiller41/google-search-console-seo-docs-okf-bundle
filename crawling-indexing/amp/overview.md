@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-amp
   resource: https://developers.google.com/search/docs/crawling-indexing/amp
@@ -51,11 +51,23 @@ All of our [best practices for making a site Google-friendly](/fundamentals/seo-
 
 The following topics describe how to work with AMP in Google Search.
 
-| Topics                                                                             |                                                                           |
-|------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [Enhance your AMP content in Google Search](/crawling-indexing/amp/enhance-amp.md) | Learn how to enhance and monitor your AMP pages.                          |
-| [Validate your AMP content](/crawling-indexing/amp/validate-amp.md)                | This document contains tips and pointers about how to validate AMP pages. |
-| [Remove your AMP pages from Google Search](/crawling-indexing/amp/remove-amp.md)   | Learn how to remove your AMP pages from Google Search.                    |
+<table>
+<tr>
+<th colspan="2">Topics</th>
+</tr>
+<tr>
+<td><a href="/crawling-indexing/amp/enhance-amp.md">Enhance your AMP content in Google Search</a></td>
+<td>Learn how to enhance and monitor your AMP pages.</td>
+</tr>
+<tr>
+<td><a href="/crawling-indexing/amp/validate-amp.md">Validate your AMP content</a></td>
+<td>This document contains tips and pointers about how to validate AMP pages.</td>
+</tr>
+<tr>
+<td><a href="/crawling-indexing/amp/remove-amp.md">Remove your AMP pages from Google Search</a></td>
+<td>Learn how to remove your AMP pages from Google Search.</td>
+</tr>
+</table>
 
 ## FAQs
 

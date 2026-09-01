@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-share-your-product-data-with-google
   resource: https://developers.google.com/search/docs/specialty/ecommerce/share-your-product-data-with-google
@@ -59,13 +59,13 @@ Learn more about how to [Sign up for Google Merchant Center](https://support.goo
 
 The following are examples of how Google uses structured data embedded in web pages and Google Merchant Center data for different experiences. Note that experiences may vary by country, device, and other factors.
 
-|                                                    |                                                                                                                                |                                                                                           |
-|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| Experience                                         | Structured Data                                                                                                                | Google Merchant Center                                                                    |
-| **Product rich results in Google Search**          | Google Search uses [Product structured data](/appearance/structured-data/product.md) to display product rich results.          | Google Search may use Google Merchant Center data to display product rich results.        |
-| **Google Images results with product annotations** | Google Images uses [Product structured data](/appearance/structured-data/product.md) to display product annotations on images. | Google Images uses images listed in Google Merchant Center.                               |
-| **Google Shopping tab**                            | Adding structured data can help Google Merchant Center in some cases (for example, during data verification).                  | Participation in Google Merchant Center is required to appear in the Google Shopping tab. |
-| **Google Lens image search results**               | Google Lens uses [image structured data properties](/appearance/structured-data/sd-policies.md) where available.               | Google Images uses images listed in Google Merchant Center.                               |
+|  |  |  |
+|----|----|----|
+| Experience | Structured Data | Google Merchant Center |
+| **Product rich results in Google Search** | Google Search uses [Product structured data](/appearance/structured-data/product.md) to display product rich results. | Google Search may use Google Merchant Center data to display product rich results. |
+| **Google Images results with product annotations** | Google Images uses [Product structured data](/appearance/structured-data/product.md) to display product annotations on images. | Google Images uses images listed in Google Merchant Center. |
+| **Google Shopping tab** | Adding structured data can help Google Merchant Center in some cases (for example, during data verification). | Participation in Google Merchant Center is required to appear in the Google Shopping tab. |
+| **Google Lens image search results** | Google Lens uses [image structured data properties](/appearance/structured-data/sd-policies.md) where available. | Google Images uses images listed in Google Merchant Center. |
 
 ## Resolving update delay issues
 

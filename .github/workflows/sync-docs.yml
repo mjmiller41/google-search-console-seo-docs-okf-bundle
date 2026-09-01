@@ -13,6 +13,9 @@ on:
 permissions:
   contents: write
 
+env:
+  PANDOC_VERSION: "3.7.0.2"
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -23,9 +26,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      # Pinned rather than taken from apt: pandoc's table handling changes
+      # between releases, so an unpinned version would rewrite concepts
+      # whenever the runner image moves.
+      - name: Install pandoc ${{ env.PANDOC_VERSION }}
         run: |
-          sudo apt-get update && sudo apt-get install -y pandoc
+          curl -fsSL -o /tmp/pandoc.deb \
+            "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb"
+          sudo dpkg -i /tmp/pandoc.deb
+          pandoc --version | head -1
+
+      - name: Install Python dependencies
+        run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install git+https://github.com/mjmiller41/cli-agent-okf.git

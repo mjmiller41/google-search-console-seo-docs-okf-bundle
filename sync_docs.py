@@ -227,6 +227,23 @@ def html_to_markdown(html: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", result.stdout.decode("utf-8")).strip()
 
 
+def needs_html_passthrough(table) -> bool:
+    """Whether a table must be carried through as HTML rather than converted.
+
+    Two kinds cannot survive as a GitHub-flavored pipe table: cells holding
+    block content, and merged cells. Pandoc's handling of the latter changed
+    between releases (3.1 flattens a colspan header into an empty extra
+    column; 3.7 emits HTML), so deciding here keeps output identical across
+    pandoc versions instead of inheriting whichever policy is installed.
+    """
+    if table.find(BLOCK_IN_CELL):
+        return True
+    return any(
+        cell.has_attr("colspan") or cell.has_attr("rowspan")
+        for cell in table.find_all(["td", "th"])
+    )
+
+
 def canonical_html(markup: str) -> str:
     """Write void elements one fixed way, so serialization changes in a future
     beautifulsoup release cannot rewrite passthrough tables on their own."""
@@ -237,7 +254,7 @@ def render_body(soup, body, page_url: str, concept_paths: dict[str, str]) -> str
     body = clean_body(body, page_url, concept_paths)
     passthrough: list[tuple[str, str]] = []
     for table in body.find_all("table"):
-        if table.find(BLOCK_IN_CELL):
+        if needs_html_passthrough(table):
             token = f"OKFTABLE{len(passthrough)}TOKEN"
             passthrough.append((token, canonical_html(str(table))))
             table.replace_with(soup.new_string(f"\n\n{token}\n\n"))

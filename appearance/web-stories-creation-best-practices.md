@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-web-stories-creation-best-practices
   resource: https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices
@@ -27,75 +27,151 @@ To keep your readers engaged, follow our best practices for creating [Web Storie
 
 ## Storytelling
 
-**Critical storytelling best practices**
-
-Video first
-
-Video is more engaging than text or images. Use as much video as possible, and supplement with images and text.
+<table>
+<th colspan="2"><b>Critical storytelling best practices</b></th>
+<tr>
+<td>
+          Video first
+        </td>
+<td>
+          Video is more engaging than text or images. Use as much video as possible, and supplement with
+          images and text.
+        </td>
+</tr>
+</table>
 
 ### More storytelling best practices
 
-**Recommended storytelling best practices**
-
-Bring your perspective
-
-Go beyond the facts. Share your opinions. Be the protagonist of your own story. Make it relatable.
-
-Have a narrative arc
-
-Create suspense in your story from one page to another. Bring the user along in the journey by providing context and narrative. Deliver payoff for sticking with you to the end.
+<table>
+<th colspan="2"><b>Recommended storytelling best practices</b></th>
+<tr>
+<td>
+          Bring your perspective
+        </td>
+<td>
+          Go beyond the facts. Share your opinions. Be the protagonist of your own story. Make it relatable.
+        </td>
+</tr>
+<tr>
+<td>
+          Have a narrative arc
+        </td>
+<td>
+          Create suspense in your story from one page to another. Bring the user along in the journey
+          by providing context and narrative. Deliver payoff for sticking with you to the end.
+        </td>
+</tr>
+</table>
 
 ## Design
 
-**Critical design best practices**
-
-Reduce your character count
-
-Avoid including multiple pages with walls of text. Consider reducing text to approximately 280 characters per page (the length of a tweet).
-
-Don't block text
-
-Make sure text is not blocked by other content on the page. Avoid burned in text; by not using burned in text, you prevent text from being blocked when it gets resized to fit various device sizes.
-
-Keep text within bounds
-
-Ensure that all text in your Web Story is visible to the reader. Avoid burned in text; by not using burned in text, you prevent text from overflowing when it gets resized to fit various device sizes.
-
-Use animations mindfully
-
-Bring your stories to life with animations. Avoid distracting or repetitive animations which can cause fatigue.
+<table>
+<th colspan="2"><b>Critical design best practices</b></th>
+<tr>
+<td>
+          Reduce your character count
+        </td>
+<td>
+          Avoid including multiple pages with walls of text. Consider reducing text to
+          approximately 280 characters per page (the length of a tweet).
+        </td>
+</tr>
+<tr>
+<td>
+          Don't block text
+        </td>
+<td>
+          Make sure text is not blocked by other content on the page. Avoid burned in text; by
+          not using burned in text, you prevent text from being blocked when it gets resized to fit
+          various device sizes.
+        </td>
+</tr>
+<tr>
+<td>
+          Keep text within bounds
+        </td>
+<td>
+          Ensure that all text in your Web Story is visible to the reader. Avoid burned in text; by
+          not using burned in text, you prevent text from overflowing when it gets resized to fit
+          various device sizes.
+        </td>
+</tr>
+<tr>
+<td>
+          Use animations mindfully
+        </td>
+<td>
+          Bring your stories to life with animations. Avoid distracting or repetitive animations which
+          can cause fatigue.
+        </td>
+</tr>
+</table>
 
 ### More design best practices
 
-**Recommended design best practices**
-
-Use Web Stories-specific call to action
-
-When re-creating stories that were originally created for a social platform like Instagram, Snapchat or YouTube, be sure to remove any reader call-to-action specific to a certain platform. Make sure that users are able to follow any actions suggested in your Web Story.
-
-Use full bleed videos and images
-
-Include full bleed assets in your stories to create a more immersive experience for readers.
-
-Avoid low resolution or distorted images and videos
-
-Use high-quality images, and take care when resizing images to portrait.
-
-Add a logo to your cover page
-
-Include a high-resolution logo that represents your brand.
-
-Shorten video length
-
-We recommend videos that are less than 15 seconds per page, or 60 seconds maximum.
-
-Include audio
-
-Use high-quality audio clips that are at least 5 seconds long with balanced volume, and ensure speech is audible.
-
-Consider auto advance for video-only stories
-
-Auto-advanced experience for video-based Web Stories could work well for a laid back experience.
+<table>
+<th colspan="2"><b>Recommended design best practices</b></th>
+<tr>
+<td>
+          Use Web Stories-specific call to action
+        </td>
+<td>
+          When re-creating stories that were originally created for a social platform like Instagram,
+          Snapchat or YouTube, be sure to remove any reader call-to-action specific to a
+          certain platform. Make sure that users are able to follow any actions suggested in your
+          Web Story.
+        </td>
+</tr>
+<tr>
+<td>
+          Use full bleed videos and images
+        </td>
+<td>
+          Include full bleed assets in your stories to create a more immersive experience for readers.
+        </td>
+</tr>
+<tr>
+<td>
+          Avoid low resolution or distorted images and videos
+        </td>
+<td>
+          Use high-quality images, and take care when resizing images to portrait.
+        </td>
+</tr>
+<tr>
+<td>
+          Add a logo to your cover page
+        </td>
+<td>
+          Include a high-resolution logo that represents your brand.
+        </td>
+</tr>
+<tr>
+<td>
+          Shorten video length
+        </td>
+<td>
+          We recommend videos that are less than 15 seconds per page, or 60 seconds maximum.
+        </td>
+</tr>
+<tr>
+<td>
+          Include audio
+        </td>
+<td>
+          Use high-quality audio clips that are at least 5 seconds long with balanced volume, and ensure
+speech is audible.
+        </td>
+</tr>
+<tr>
+<td>
+          Consider auto advance for video-only stories
+        </td>
+<td>
+          Auto-advanced experience for video-based Web Stories could work well for a laid back experience.
+        </td>
+</tr>
+</table>
 
 ## SEO
 
@@ -256,31 +332,61 @@ Auto-advanced experience for video-based Web Stories could work well for a laid 
 
 ## Technical
 
-**Critical technical best practices**
-
-Make the story valid
-
-Web Stories must be valid AMP pages. To avoid invalid AMP issues, test your Story using the [AMP Validator tool](https://validator.ampproject.org/) and fix any detected errors.
-
-Don't include text in the poster image
-
-Avoid using images that contain burned in text, as this could obstruct the title of your story when users preview your story in Search results. If users are unable to clearly read the title, they may be less likely to continue reading.
-
-Include the right poster image size and aspect ratio
-
-Make sure that the image linked to your `<amp-story> poster-portrait-src` attribute is at least 640x853px and use an aspect ratio of 3:4.
-
-Include the right aspect ratio for the logo
-
-Make sure that the logo image linked to your `<amp-story> publisher-logo-src` attribute is at least 96x96 px and aspect ratio of 1:1.
+<table>
+<th colspan="2"><b>Critical technical best practices</b></th>
+<tr>
+<td>
+          Make the story valid
+        </td>
+<td>
+          Web Stories must be valid AMP pages. To avoid invalid AMP issues, test your Story using the
+<a href="https://validator.ampproject.org/">AMP Validator tool</a> and fix any detected errors.
+        </td>
+</tr>
+<tr>
+<td>
+         Don't include text in the poster image
+        </td>
+<td>
+          Avoid using images that contain burned in text, as this could obstruct the title of your
+          story when users preview your story in Search results. If users are unable to clearly read
+          the title, they may be less likely to continue reading.
+        </td>
+</tr>
+<tr>
+<td>
+         Include the right poster image size and aspect ratio
+        </td>
+<td>
+          Make sure that the image linked to your <code>&lt;amp-story&gt; poster-portrait-src</code>
+          attribute is at least 640x853px and use an aspect ratio of 3:4.
+        </td>
+</tr>
+<tr>
+<td>
+         Include the right aspect ratio for the logo
+        </td>
+<td>
+          Make sure that the logo image linked to your <code>&lt;amp-story&gt; publisher-logo-src</code>
+          attribute is at least 96x96 px and aspect ratio of 1:1.
+        </td>
+</tr>
+</table>
 
 ### More technical best practices
 
-**Recommended technical best practices**
-
-Include `og:image`
-
-We recommend including `og:image` in your `<meta>` tags to improve your story's discoverability.
+<table>
+<th colspan="2"><b>Recommended technical best practices</b></th>
+<tr>
+<td>
+          Include <code>og:image</code>
+</td>
+<td>
+          We recommend including <code>og:image</code> in your
+          <code>&lt;meta&gt;</code> tags to improve your story's discoverability.
+        </td>
+</tr>
+</table>
 
 ## Other resources
 

@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-video
   resource: https://developers.google.com/search/docs/appearance/video
@@ -205,12 +205,43 @@ However, you can influence which thumbnail is shown in video features by providi
 
 If you choose to specify multiple metadata sources (for example, specifying a thumbnail in both your sitemap and structured data), make sure you're using the same thumbnail URL per video across all metadata.
 
-| Video thumbnail specifications  |
-|---------------------------------|
-| **Supported thumbnail formats** |
-| **Size**                        |
-| **Location**                    |
-| **Transparency**                |
+<table>
+<colgroup><col/></colgroup>
+<thead>
+<tr><th colspan="2">Video thumbnail specifications</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<b>Supported thumbnail formats</b>
+</td>
+<td>BMP, GIF, JPEG, PNG, WebP, SVG, and AVIF</td>
+</tr>
+<tr>
+<td>
+<b>Size</b>
+</td>
+<td>Minimum 60x30 pixels, larger preferred.</td>
+</tr>
+<tr>
+<td>
+<b>Location</b>
+</td>
+<td>
+        The thumbnail file must be accessible by Googlebot and Googlebot Images (don't block the
+        file with <a href="/crawling-indexing/robots/intro.md">robots.txt</a> or a login
+        requirement). Make sure that the file is consistently available at a
+        <a href="https://developers.google.com/search/docs/appearance/video/#stable-url">stable URL</a>.
+        </td>
+</tr>
+<tr>
+<td>
+<b>Transparency</b>
+</td>
+<td>At least 80% of the thumbnail's pixels must have an alpha (transparency) value greater than 250.</td>
+</tr>
+</tbody>
+</table>
 
 ### Provide consistent and unique information in your structured data
 

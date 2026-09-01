@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-localized-versions
   resource: https://developers.google.com/search/docs/specialty/international/localized-versions
@@ -71,10 +71,25 @@ Here is the syntax of each `link` element:
 <link rel="alternate" hreflang="lang_code" href="url_of_page" />
 ```
 
-| Syntax        |                                                                                                                                                                                                                                                                             |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `lang_code`   | A [supported language/region code](https://developers.google.com/search/docs/specialty/international/localized-versions/#language-codes) targeted by this version of the page, or `x-default` to match any language not explicitly listed by an `hreflang` tag on the page. |
-| `url_of_page` | The fully-qualified URL for the version of this page for the specified language/region.                                                                                                                                                                                     |
+<table>
+<tr>
+<th colspan="2">Syntax</th>
+</tr>
+<tr>
+<td><code>lang_code</code></td>
+<td>
+          A <a href="https://developers.google.com/search/docs/specialty/international/localized-versions/#language-codes">supported language/region code</a> targeted by this version of
+          the page, or <code>x-default</code> to match any language not explicitly listed by an
+          <code>hreflang</code> tag on the page.
+        </td>
+</tr>
+<tr>
+<td><code>url_of_page</code></td>
+<td>
+          The fully-qualified URL for the version of this page for the specified language/region.
+        </td>
+</tr>
+</table>
 
 The `<link>` tags must be inside a [well-formed `<head>` section](/crawling-indexing/valid-page-metadata.md) of the HTML. If in doubt, paste code from your rendered page into an [HTML validator](https://validator.w3.org/) to ensure that the links are inside the `<head>` element. Additionally, don't combine `link` tags for alternate representations of the document; for example don't combine `hreflang` annotations with other attributes such as `media` in a single `<link>` tag.
 
@@ -82,13 +97,31 @@ The `<link>` tags must be inside a [well-formed `<head>` section](/crawling-inde
 
 Example Widgets, Inc has a website that serves users in the USA, UK, and Germany. The following URLs contain substantially the same content, but with regional variations:
 
-| URLs with regional variations         |                                                                                                                        |
-|---------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| `https://en.example.com/page.html`    | Generic English language home page that contains information about fees for shipping internationally from the USA.     |
-| `https://en-gb.example.com/page.html` | UK home page that displays prices in pounds sterling.                                                                  |
-| `https://en-us.example.com/page.html` | US home page that displays prices in US dollars.                                                                       |
-| `https://de.example.com/page.html`    | German language home page.                                                                                             |
-| `https://www.example.com/`            | Default page that doesn't target any language or locale; it has selectors to let users pick their language and region. |
+<table>
+<tr>
+<th colspan="2">URLs with regional variations</th>
+</tr>
+<tr>
+<td><code>https://en.example.com/page.html</code></td>
+<td>Generic English language home page that contains information about fees for shipping internationally from the USA.</td>
+</tr>
+<tr>
+<td><code>https://en-gb.example.com/page.html</code></td>
+<td>UK home page that displays prices in pounds sterling.</td>
+</tr>
+<tr>
+<td><code>https://en-us.example.com/page.html</code></td>
+<td>US home page that displays prices in US dollars.</td>
+</tr>
+<tr>
+<td><code>https://de.example.com/page.html</code></td>
+<td>German language home page.</td>
+</tr>
+<tr>
+<td><code>https://www.example.com/</code></td>
+<td>Default page that doesn't target any language or locale; it has selectors to let users pick their language and region.</td>
+</tr>
+</table>
 
 Note that the language-specific subdomains in these URLs (`en`, `en-gb`, `en-us`, `de`) are not used by Google to determine the target audience for the page; you must explicitly map the target audience.
 
@@ -118,10 +151,23 @@ Here is the format of the header:
 
     Link: <url1>; rel="alternate"; hreflang="lang_code_1", <url2>; rel="alternate"; hreflang="lang_code_2", ...
 
-| Syntax        |                                                                                                                                                                                                                                                                               |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `<url_x>`     | The fully-qualified URL of the alternate page corresponding to the locale string assigned to the associated `hreflang` attribute. The URL must include surrounding `<` and `>` marks. **Example:** `<https://www.google.com>`                                                 |
-| `lang_code_x` | A [supported language/region code](https://developers.google.com/search/docs/specialty/international/localized-versions/#language-codes) targeted by this version of the page, or `x-default` to matches any language not explicitly listed by an `hreflang` tag on the page. |
+<table>
+<tr>
+<th colspan="2">Syntax</th>
+</tr>
+<tr>
+<td><code>&lt;url_x&gt;</code></td>
+<td>The fully-qualified URL of the alternate page corresponding to the locale string assigned
+        to the associated <code>hreflang</code> attribute. The URL must include surrounding <code>&lt;</code> and
+        <code>&gt;</code> marks. <b>Example:</b> <code>&lt;https://www.google.com&gt;</code></td>
+</tr>
+<tr>
+<td><code>lang_code_x</code></td>
+<td>A <a href="https://developers.google.com/search/docs/specialty/international/localized-versions/#language-codes">supported language/region code</a> targeted by this version of
+        the page, or <code>x-default</code> to matches any language not explicitly listed by an
+        <code>hreflang</code> tag on the page.</td>
+</tr>
+</table>
 
 You must specify a set of `<url>`, `rel="alternate"`, and `hreflang` values for every version of the page **including the requested version**, separated by a comma as shown in the following example. The `Link:` header returned for every version of a page is identical. [See the additional guidelines.](https://developers.google.com/search/docs/specialty/international/localized-versions/#all-method-guidelines)
 

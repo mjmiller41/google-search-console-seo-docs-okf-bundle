@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-combine-sitemap-extensions
   resource: https://developers.google.com/search/docs/crawling-indexing/sitemaps/combine-sitemap-extensions
@@ -29,12 +29,33 @@ Sitemap extensions are a great way to tell Google about the different kinds of c
 
 For each sitemap extension that you want to use in a sitemap you need to specify the respective namespace that declares the tags the extension supports. This is done with the `xmlns` attribute of the `urlset` tag. The namespaces for the sitemap extensions Google supports are:
 
-| Extension tags and their namespace definitions |                                                                                                      |
-|------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| `image:`                                       | [`http://www.google.com/schemas/sitemap-image/1.1`](http://www.google.com/schemas/sitemap-image/1.1) |
-| `news:`                                        | [`http://www.google.com/schemas/sitemap-news/0.9`](http://www.google.com/schemas/sitemap-news/0.9)   |
-| `video:`                                       | [`http://www.google.com/schemas/sitemap-video/1.1`](http://www.google.com/schemas/sitemap-video/1.1) |
-| `xhtml:` (for `hreflang`)                      | [`http://www.w3.org/1999/xhtml`](http://www.w3.org/1999/xhtml)                                       |
+<table>
+<tr><th colspan="2">Extension tags and their namespace definitions</th></tr>
+<tr>
+<td><code>image:</code></td>
+<td>
+<a href="http://www.google.com/schemas/sitemap-image/1.1"><code>http://www.google.com/schemas/sitemap-image/1.1</code></a>
+</td>
+</tr>
+<tr>
+<td><code>news:</code></td>
+<td>
+<a href="http://www.google.com/schemas/sitemap-news/0.9"><code>http://www.google.com/schemas/sitemap-news/0.9</code></a>
+</td>
+</tr>
+<tr>
+<td><code>video:</code></td>
+<td>
+<a href="http://www.google.com/schemas/sitemap-video/1.1"><code>http://www.google.com/schemas/sitemap-video/1.1</code></a>
+</td>
+</tr>
+<tr>
+<td><code>xhtml:</code> (for <code>hreflang</code>)</td>
+<td>
+<a href="http://www.w3.org/1999/xhtml"><code>http://www.w3.org/1999/xhtml</code></a>
+</td>
+</tr>
+</table>
 
 ### Declaring multiple namespaces
 

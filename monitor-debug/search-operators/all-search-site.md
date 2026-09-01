@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-all-search-site
   resource: https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site
@@ -25,10 +25,31 @@ sources:
 
 A `site:` query is a search operator that allows you to request search results from the particular domain, URL, or URL prefix specified in the operator. For example:
 
-| `site:` examples                              |                                                                                                                                  |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| `site:example.com`                            | Show results only from the `example.com` domain (`www.example.com` and `recipes.example.com`).                                   |
-| `site:https://www.example.com/ramen` tsukemen | Shows results for pages that contain URLs that start with `https://www.example.com/ramen` and are relevant to the term tsukemen. |
+<table>
+<thead>
+<tr>
+<th colspan="2"><code>site:</code> examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>site:example.com</code>
+</td>
+<td>
+            Show results only from the <code>example.com</code> domain (<code>www.example.com</code>
+            and <code>recipes.example.com</code>).
+          </td>
+</tr>
+<tr>
+<td><code>site:https://www.example.com/ramen</code> tsukemen
+          </td>
+<td>
+            Shows results for pages that contain URLs that start with
+            <code>https://www.example.com/ramen</code> and are relevant to the term tsukemen.
+          </td>
+</tr>
+</tbody>
+</table>
 
 The `site:` search operator is available on all Google Search properties.
 

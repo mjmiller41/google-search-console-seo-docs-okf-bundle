@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-event
   resource: https://developers.google.com/search/docs/appearance/structured-data/event
@@ -343,13 +343,44 @@ Specify the timezone by including the UTC or GMT time offset. If the event start
 
 Here are some examples of how Google interprets start date and time:
 
-|                                     |
-|-------------------------------------|
-| Start date and time interpretations |
-| `2019-08-15T00:00:00+00:00`         |
-| `2019-08-15T23:59:59+00:00`         |
-| `2019-07-10`                        |
-| `2019-07-20T00:00:00`               |
+<table>
+<colgroup>
+<col/>
+</colgroup>
+<tbody>
+<tr>
+<th colspan="2">Start date and time interpretations</th>
+</tr>
+<tr>
+<td><code>2019-08-15T00:00:00+00:00</code></td>
+<td>
+        Google interprets the <code>startTime</code> to be
+        <code>2019-08-14T17:00:00-07:00</code> (if <code>location</code> is set to California) or
+        <code>2019-08-15T09:00:00</code> (if <code>location</code> is set to Korea).
+      </td>
+</tr>
+<tr>
+<td><code>2019-08-15T23:59:59+00:00</code></td>
+<td>This doesn't mean the end of <code>2019-08-15</code> unless the event happens in
+        the GMT timezone. Google interprets the <code>startTime</code> to be
+        <code>2019-08-15T16:59:59-07:00</code> (if <code>location</code> is set to California) or
+        <code>2019-08-16T08:59:59</code> (if <code>location</code> is set to Korea).</td>
+</tr>
+<tr>
+<td><code>2019-07-10</code></td>
+<td>This means the date regardless of the timezone. When used in <code>startDate</code>,
+        it means the event starts in the <code>location</code> from sometime in that day. When used in
+        <code>endDate</code>, it means the event ends in the <code>location</code> from sometime in that
+        day.</td>
+</tr>
+<tr>
+<td><code>2019-07-20T00:00:00</code></td>
+<td>This means midnight on <code>2019-07-20</code> for the timezone where the
+        event happens. This is also likely wrong unless the event was meant to start at
+        midnight.</td>
+</tr>
+</tbody>
+</table>
 
 ## Structured data type definitions
 

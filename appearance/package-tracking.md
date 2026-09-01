@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-package-tracking
   resource: https://developers.google.com/search/docs/appearance/package-tracking
@@ -43,25 +43,92 @@ We expect almost no downtime from your API and require that your API respond wit
 
 For the integration to work, your API must return the following information:
 
-| Required field  |                                                                                                                   |
-|-----------------|-------------------------------------------------------------------------------------------------------------------|
-| `CurrentStatus` | The current status of the package. This includes the date and time this status became valid and any error states. |
+<table>
+<tr>
+<th colspan="2">Required field</th>
+</tr>
+<tr>
+<td><code>CurrentStatus</code>
+</td>
+<td>The current status of the package. This includes the date and time this status became
+         valid and any error states.
+       </td>
+</tr>
+</table>
 
 We strongly recommend that your API also return the following information:
 
-| Recommended fields    |                                                                                                                                                                            |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `DeliveredDate`       | The day and time the package was delivered (if it has been delivered).                                                                                                     |
-| `PromisedDate`        | The date the package is expected to be delivered.                                                                                                                          |
-| `TrackingNumber`      | The tracking number for the package.                                                                                                                                       |
-| `TrackingURL`         | The website URL that a user can visit to view package tracking information and possible additional details.                                                                |
-| `SupportPhoneNumbers` | A list of support phone numbers available per region.                                                                                                                      |
-| `TransitEvents`       | The set of events that denote when a package makes interim progress on its journey to the recipient, including the Day, Time, City, State, and Country (where applicable). |
-| `CreateDate`          | The day and time the tracking number was created.                                                                                                                          |
-| `PickupDate`          | The date the package was picked up by the carrier.                                                                                                                         |
-| `TimestampEvent`      | The timestamp of an event associated with a given package.                                                                                                                 |
-| `LocationEvent`       | The location of an event associated with a given package.                                                                                                                  |
-| `CanReschedule`       | Whether this package can be re-scheduled.                                                                                                                                  |
+<table>
+<tr>
+<th colspan="2">Recommended fields</th>
+</tr>
+<tr>
+<td><code>DeliveredDate</code>
+</td>
+<td>The day and time the package was delivered (if it has been delivered).
+       </td>
+</tr>
+<tr>
+<td><code>PromisedDate</code>
+</td>
+<td>The date the package is expected to be delivered.
+       </td>
+</tr>
+<tr>
+<td><code>TrackingNumber</code>
+</td>
+<td>The tracking number for the package.
+       </td>
+</tr>
+<tr>
+<td><code>TrackingURL</code>
+</td>
+<td>The website URL that a user can visit to view package tracking information and possible additional details.
+       </td>
+</tr>
+<tr>
+<td><code>SupportPhoneNumbers</code>
+</td>
+<td>A list of support phone numbers available per region.
+       </td>
+</tr>
+<tr>
+<td><code>TransitEvents</code>
+</td>
+<td>The set of events that denote when a package makes interim progress on its journey to the recipient, including the Day, Time, City, State, and Country (where applicable).
+       </td>
+</tr>
+<tr>
+<td><code>CreateDate</code>
+</td>
+<td>The day and time the tracking number was created.
+       </td>
+</tr>
+<tr>
+<td><code>PickupDate</code>
+</td>
+<td>The date the package was picked up by the carrier.
+       </td>
+</tr>
+<tr>
+<td><code>TimestampEvent</code>
+</td>
+<td>The timestamp of an event associated with a given package.
+       </td>
+</tr>
+<tr>
+<td><code>LocationEvent</code>
+</td>
+<td>The location of an event associated with a given package.
+       </td>
+</tr>
+<tr>
+<td><code>CanReschedule</code>
+</td>
+<td>Whether this package can be re-scheduled.
+       </td>
+</tr>
+</table>
 
 We don't accept the following information:
 

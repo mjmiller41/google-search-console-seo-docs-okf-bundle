@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-remove-information
   resource: https://developers.google.com/search/docs/crawling-indexing/remove-information
@@ -47,9 +47,11 @@ Learn how to [remove images that are hosted on your site from search results](/c
 
 To remove content from other Google properties, search the help documentation for your product to learn how to remove it. For example:
 
-- **Google Shopping and some other properties**: [Opt out of search results for specific Google properties](https://support.google.com/webmasters/answer/3035947).
-- **Business information**: [Edit business information that you added to your Business Profile](https://support.google.com/business/answer/3039617).
-- **Google knowledge panel**: [Update your Google knowledge panel](https://support.google.com/knowledgepanel/answer/7534842).
+**Google Shopping and some other properties**: [Opt out of search results for specific Google properties](https://support.google.com/webmasters/answer/3035947).
+
+**Business information**: [Edit business information that you added to your Business Profile](https://support.google.com/business/answer/3039617).
+
+**Google knowledge panel**: [Update your Google knowledge panel](https://support.google.com/knowledgepanel/answer/7534842).
 
 ## How do I remove content from a site that I don't own?
 

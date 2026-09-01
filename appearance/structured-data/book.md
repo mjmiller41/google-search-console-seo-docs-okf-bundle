@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-book
   resource: https://developers.google.com/search/docs/appearance/structured-data/book
@@ -163,12 +163,33 @@ When your feed file is ready, host it at a secure location. Google fetches the f
 
 The following feed hosting methods are supported:
 
-| **Hosting**          | **Authentication Support**                                                             |     |
-|----------------------|----------------------------------------------------------------------------------------|-----|
-| Google Cloud Storage | *Storage Object Viewer* permission                                                     |     |
-| HTTPS                | Username+Password or [HTTP client certificates](https://web.dev/articles/enable-https) |     |
-| SFTP                 | Password, Key+Phrase, or both                                                          |     |
-| AWS S3               | Key ID+Access Key                                                                      |     |
+<table>
+<thead>
+<tr>
+<th><b>Hosting</b></th>
+<th colspan="2"><b>Authentication Support</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Cloud Storage</td>
+<td><i>Storage Object Viewer</i> permission</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>Username+Password or
+            <a href="https://web.dev/articles/enable-https">HTTP client certificates</a></td>
+</tr>
+<tr>
+<td>SFTP</td>
+<td>Password, Key+Phrase, or both</td>
+</tr>
+<tr>
+<td>AWS S3</td>
+<td>Key ID+Access Key</td>
+</tr>
+</tbody>
+</table>
 
 ## Submit your feed file for review
 

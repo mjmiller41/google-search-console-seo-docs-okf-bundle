@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-core-web-vitals
   resource: https://developers.google.com/search/docs/appearance/core-web-vitals
@@ -35,9 +35,11 @@ sources:
 
 Here are some resources that can help you measure, monitor, and optimize your Core Web Vitals:
 
-- Check the [Core Web Vitals report in Search Console](https://support.google.com/webmasters/answer/9205520). This shows how your pages perform.
-- Learn more about [Core Web Vitals](https://web.dev/articles/learn-core-web-vitals), a guide about Core Web Vitals, including how to measure, debug, improve and best practices.
-- Learn about the different tools that can help you [measure and report Core Web Vitals](https://web.dev/articles/vitals-tools). These tools measure LCP, INP, and CLS.
+Check the [Core Web Vitals report in Search Console](https://support.google.com/webmasters/answer/9205520). This shows how your pages perform.
+
+Learn more about [Core Web Vitals](https://web.dev/articles/learn-core-web-vitals), a guide about Core Web Vitals, including how to measure, debug, improve and best practices.
+
+Learn about the different tools that can help you [measure and report Core Web Vitals](https://web.dev/articles/vitals-tools). These tools measure LCP, INP, and CLS.
 
 ## Recent updates on our blog
 

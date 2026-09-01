@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-verifying-googlebot
   resource: https://developers.google.com/crawling/docs/crawlers-fetchers/verifying-googlebot
@@ -35,7 +35,7 @@ Google's crawlers and fetchers fall into three categories:
 <col style="width: 25%" />
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Type</th>
 <th>Description</th>
 <th>Reverse DNS mask</th>
@@ -43,19 +43,19 @@ Google's crawlers and fetchers fall into three categories:
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><a href="https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers">Common crawlers</a></td>
 <td>The common crawlers used for Google's products (such as Googlebot). They always respect robots.txt rules for automatic crawls.</td>
 <td><code>crawl-***-***-***-***.googlebot.com</code> or <code>geo-crawl-***-***-***-***.geo.googlebot.com</code></td>
 <td><a href="https://developers.google.com/static/crawling/ipranges/common-crawlers.json">common-crawlers.json</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td><a href="https://developers.google.com/crawling/docs/crawlers-fetchers/google-special-case-crawlers">Special-case crawlers</a></td>
 <td>Crawlers or fetchers that perform specific functions for Google products (such as AdsBot) where there's an agreement between the crawled site and the product about the access or for abuse-specific crawling or fetching. These crawlers or fetchers may or may not respect robots.txt rules.</td>
 <td><code>rate-limited-proxy-***-***-***-***.google.com</code></td>
 <td><a href="https://developers.google.com/static/crawling/ipranges/special-crawlers.json">special-crawlers.json</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><a href="https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers">User-triggered fetchers</a></td>
 <td>Tools and product functions where the end user triggers a fetch. For example, <a href="https://support.google.com/webmasters/answer/9008080">Google Site Verifier</a> acts on the request of a user. Because the fetch was requested by a user, these fetchers ignore robots.txt rules.<br />
 Fetchers controlled by Google originate from IPs in the <code>user-triggered-fetchers-google.json</code> object and resolve to a <code>google.com</code> hostname. IPs in the <code>user-triggered-fetchers.json</code> object resolve to <code>gae.googleusercontent.com</code> hostnames. These IPs are used, for example, if a site running on Google Cloud (GCP) has a feature that requires fetching external RSS feeds on the request of the user of that site.</td>

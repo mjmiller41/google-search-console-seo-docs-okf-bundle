@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:52:09Z'
+  at: '2026-09-01T14:55:35Z'
 sources:
 - id: google-ecommerce
   resource: https://developers.google.com/search/docs/specialty/ecommerce
@@ -29,17 +29,82 @@ This set of guides is for developers who are building websites and that want to 
 
 Here's a brief description of each page.
 
-|                                                                                                                                            |                                                                                                                                                      |
-|--------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Topics                                                                                                                                     |                                                                                                                                                      |
-| [Where ecommerce content can appear on Google](/specialty/ecommerce/where-ecommerce-data-can-appear-on-google.md)                          | Understand the different surfaces where your ecommerce content can appear.                                                                           |
-| [Share your product data with Google](/specialty/ecommerce/share-your-product-data-with-google.md)                                         | Decide which method to use when sharing your product data with Google.                                                                               |
-| [Include structured data relevant to ecommerce](/specialty/ecommerce/include-structured-data-relevant-to-ecommerce.md)                     | Help Google understand and appropriately present your content by providing explicit information about the meaning of your page with structured data. |
-| [How to launch a new ecommerce website](/specialty/ecommerce/how-to-launch-an-ecommerce-website.md)                                        | Learn how to strategically launch a new ecommerce website and understand timing considerations when registering your website with Google.            |
-| [Write high quality reviews](/specialty/ecommerce/write-high-quality-reviews.md)                                                           | Write high quality product reviews to help shoppers decide on the right product for their needs.                                                     |
-| [Designing a URL structure for ecommerce sites](/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites.md)                     | Avoid issues related to crawling and URL design that are specific to ecommerce sites.                                                                |
-| [Help Google understand your ecommerce site structure](/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure.md)       | Design a site navigation structure and link between pages to help Google understand what is most important on your ecommerce site.                   |
-| [Pagination, incremental page loading, and their impact on Google Search](/specialty/ecommerce/pagination-and-incremental-page-loading.md) | Learn common UX patterns for ecommerce sites and understand how UX patterns impact Google's ability to crawl and index your content.                 |
+<table>
+<tbody>
+<tr>
+<th colspan="2">
+            Topics
+          </th>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/where-ecommerce-data-can-appear-on-google.md">Where ecommerce content can appear on Google</a>
+</td>
+<td>
+            Understand the different surfaces where your ecommerce content can appear.
+          </td>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/share-your-product-data-with-google.md">Share your product data with Google</a>
+</td>
+<td>
+            Decide which method to use when sharing your product data with Google.
+          </td>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/include-structured-data-relevant-to-ecommerce.md">Include structured data relevant to ecommerce</a>
+</td>
+<td>
+            Help Google understand and appropriately present your content by providing explicit
+            information about the meaning of your page with structured data.
+          </td>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/how-to-launch-an-ecommerce-website.md">How to launch a new ecommerce website</a>
+</td>
+<td>
+            Learn how to strategically launch a new ecommerce website and understand timing
+            considerations when registering your website with Google.
+          </td>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/write-high-quality-reviews.md">Write high quality reviews</a>
+</td>
+<td>
+            Write high quality product reviews to help shoppers decide on the right product for their needs.
+          </td>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites.md">Designing a URL structure for ecommerce sites</a>
+</td>
+<td>
+            Avoid issues related to crawling and URL design that are specific to ecommerce sites.
+          </td>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure.md">Help Google understand your ecommerce site structure</a>
+</td>
+<td>
+            Design a site navigation structure and link between pages to help Google understand what
+            is most important on your ecommerce site.
+          </td>
+</tr>
+<tr>
+<td>
+<a href="/specialty/ecommerce/pagination-and-incremental-page-loading.md">Pagination, incremental page loading, and their impact on Google Search</a>
+</td>
+<td>
+            Learn common UX patterns for ecommerce sites and understand how UX patterns impact
+            Google's ability to crawl and index your content.</td>
+</tr>
+</tbody>
+</table>
 
 # References & Citations
 
