@@ -1,4 +1,7 @@
-beautifulsoup4>=4.12
+# 4.15 fixed void-element handling in html.parser: earlier releases nest
+# following siblings inside <input>/<img>, which changes the HTML that tables
+# pass through verbatim and makes the sync produce spurious diffs.
+beautifulsoup4>=4.15.0
 PyYAML>=6.0
 
 # Also required, installed separately (not a Python package):

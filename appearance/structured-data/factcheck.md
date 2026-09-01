@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:46:16Z'
 sources:
 - id: google-factcheck
   resource: https://developers.google.com/search/docs/appearance/structured-data/factcheck
@@ -253,7 +253,7 @@ The full definition of `ClaimReview` is available at [schema.org/ClaimReview](ht
             <code>itemReviewed</code>. Google Search continues to support earlier markup patterns.
             Here's an example that shows the original markup style:
             <br/>
-<form><input><textarea>&lt;html&gt;
+<form><input/><textarea>&lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;The world is flat&lt;/title&gt;
     &lt;script type="application/ld+json"&gt;
@@ -292,7 +292,7 @@ The full definition of `ClaimReview` is available at [schema.org/ClaimReview](ht
   &lt;/head&gt;
   &lt;body&gt;
   &lt;/body&gt;
-&lt;/html&gt;</textarea></input></form></blockquote>
+&lt;/html&gt;</textarea></form></blockquote>
 </td>
 </tr>
 </tbody>

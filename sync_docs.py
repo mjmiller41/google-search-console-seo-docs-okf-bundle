@@ -33,10 +33,22 @@ from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 try:
+    import bs4
     import yaml
     from bs4 import BeautifulSoup, Comment
 except ImportError as exc:  # pragma: no cover
     sys.exit(f"Missing dependency: {exc}. Install with: pip install -r requirements.txt")
+
+# Change detection compares rendered concepts byte for byte, so the parse must
+# be reproducible. beautifulsoup4 < 4.15 mishandles void elements in
+# html.parser (a <textarea> after an <input> is nested *inside* it), which
+# alters the HTML that complex tables pass through verbatim and would make
+# every sync report phantom updates.
+if tuple(int(p) for p in bs4.__version__.split(".")[:2]) < (4, 15):
+    sys.exit(
+        f"beautifulsoup4 >= 4.15 required for reproducible output "
+        f"(found {bs4.__version__}). Upgrade with: pip install -r requirements.txt"
+    )
 
 BASE = "https://developers.google.com"
 ROOT_DOC = "/search/docs"
@@ -68,6 +80,13 @@ KEEP_ATTRS = {
 # Cells holding these need real HTML; pandoc would flatten them into a lossy
 # single-column pipe table, so such tables pass through verbatim.
 BLOCK_IN_CELL = ["p", "ul", "ol", "pre", "blockquote", "table", "h1", "h2", "h3", "h4", "img"]
+
+VOID_ELEMENTS = ("area", "base", "br", "col", "embed", "hr", "img", "input",
+                 "link", "meta", "param", "source", "track", "wbr")
+VOID_CLOSE_RE = re.compile(r"</(?:%s)\s*>" % "|".join(VOID_ELEMENTS), re.I)
+VOID_OPEN_RE = re.compile(
+    r"<((?:%s))\b((?:[^>\"']|\"[^\"]*\"|'[^']*')*?)\s*/?>" % "|".join(VOID_ELEMENTS), re.I
+)
 
 FOOTNOTE_RE = re.compile(r"\[\^([A-Za-z0-9_\-]+)\]")
 LAST_UPDATED_RE = re.compile(r"Last updated (\d{4}-\d{2}-\d{2}) UTC")
@@ -208,13 +227,19 @@ def html_to_markdown(html: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", result.stdout.decode("utf-8")).strip()
 
 
+def canonical_html(markup: str) -> str:
+    """Write void elements one fixed way, so serialization changes in a future
+    beautifulsoup release cannot rewrite passthrough tables on their own."""
+    return VOID_OPEN_RE.sub(r"<\1\2/>", VOID_CLOSE_RE.sub("", markup))
+
+
 def render_body(soup, body, page_url: str, concept_paths: dict[str, str]) -> str:
     body = clean_body(body, page_url, concept_paths)
     passthrough: list[tuple[str, str]] = []
     for table in body.find_all("table"):
         if table.find(BLOCK_IN_CELL):
             token = f"OKFTABLE{len(passthrough)}TOKEN"
-            passthrough.append((token, str(table)))
+            passthrough.append((token, canonical_html(str(table))))
             table.replace_with(soup.new_string(f"\n\n{token}\n\n"))
     markdown = html_to_markdown(body.decode_contents())
     for token, table_html in passthrough:

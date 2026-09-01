@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:46:16Z'
 sources:
 - id: google-recipe
   resource: https://developers.google.com/search/docs/appearance/structured-data/recipe
@@ -37,8 +37,8 @@ Based on how you mark up your content, your recipes can be eligible for the foll
           pages by adding <a href="https://developers.google.com/search/docs/appearance/structured-data/recipe/#item-list"><code>ItemList</code> structured data</a>.
           </td>
 <td>
-<img alt="An illustration of how a recipe host carousel can appear in Google Search. It shows 3 different recipes from the same website in a carousel format that users can explore and select a specific recipe" src="https://developers.google.com/static/search/docs/images/recipe-host-carousel-rich-result.png">
-</img></td>
+<img alt="An illustration of how a recipe host carousel can appear in Google Search. It shows 3 different recipes from the same website in a carousel format that users can explore and select a specific recipe" src="https://developers.google.com/static/search/docs/images/recipe-host-carousel-rich-result.png"/>
+</td>
 </tr>
 </tbody>
 </table>

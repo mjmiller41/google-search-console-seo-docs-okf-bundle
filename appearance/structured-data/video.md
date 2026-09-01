@@ -10,7 +10,7 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-01T14:46:16Z'
 sources:
 - id: google-video
   resource: https://developers.google.com/search/docs/appearance/structured-data/video
@@ -49,8 +49,8 @@ Based on how you mark up your watch page, your videos may also be eligible for t
       </p>
 </td>
 <td>
-<img alt="Video with a LIVE badge in search results" src="https://developers.google.com/static/search/docs/images/video-livestream.png">
-</img></td>
+<img alt="Video with a LIVE badge in search results" src="https://developers.google.com/static/search/docs/images/video-livestream.png"/>
+</td>
 </tr>
 <tr>
 <td>
@@ -92,8 +92,8 @@ Based on how you mark up your watch page, your videos may also be eligible for t
   </p>
 </td>
 <td>
-<img alt="Video with key moments in search results" src="https://developers.google.com/static/search/docs/images/video-key-moments.png">
-</img></td>
+<img alt="Video with key moments in search results" src="https://developers.google.com/static/search/docs/images/video-key-moments.png"/>
+</td>
 </tr>
 </table>
 
