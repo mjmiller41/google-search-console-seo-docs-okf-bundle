@@ -56,8 +56,10 @@ before writing any finding.
 7. **Emit findings** in the `../shared/report-format.md` structure: one
    finding per check ID per affected page group, each with evidence, why it
    matters, a concrete fix, and a full grounding citation (path, upstream
-   URL, both dates). Never report a measured Core Web Vitals score or claim
-   a CWV pass/fail — APP-08 is heuristic-only and must be labeled as such.
+   URL, both dates). Report Core Web Vitals verdicts only from real field
+   data via `cwv_field_data.py` when a key is configured (see
+   `../shared/integrations.md`); without one, APP-08 is heuristic-only and
+   every such finding must be labeled a heuristic, never a measurement.
    If running standalone, emit the whole report document; if running under a
    router, emit only this category's findings, scorecard row, and "Checks
    not run" rows for the router to merge.

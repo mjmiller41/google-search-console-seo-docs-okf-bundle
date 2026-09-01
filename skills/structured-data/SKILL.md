@@ -50,10 +50,16 @@ See `../shared/grounding.md` for the full rule.
    doesn't currently mark up. Only suggest markup the content genuinely
    supports — never suggest marking up something not visible on the page, per
    SD-04.
-9. **Report.** Emit findings in the shared report structure. Every finding
-   names the type doc it came from. Close with a recommendation to verify
-   final markup in the [Rich Results Test](https://search.google.com/test/rich-results) —
-   this audit is a snapshot against a mirrored doc set, not a live validator.
+9. **Google's own verdict, when available.** If Search Console access is
+   configured (`../shared/integrations.md`), run
+   `"$ROOT/skills/shared/scripts/gsc_probe.py" --site <property> --inspect <url>`
+   on the sampled URLs that carry markup: the response's rich-results section
+   is the same assessment the Rich Results Test gives, and it supersedes this
+   audit's approximation wherever the two disagree.
+10. **Report.** Emit findings in the shared report structure. Every finding
+    names the type doc it came from. Close with a recommendation to verify
+    final markup in the [Rich Results Test](https://search.google.com/test/rich-results) —
+    this audit is a snapshot against a mirrored doc set, not a live validator.
 
 ## Scope boundary
 

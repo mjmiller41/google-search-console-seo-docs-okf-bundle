@@ -36,11 +36,16 @@ ranking signals — only to what Search Console and the site itself expose.
    `./reference/gsc-analysis.md` (which carries the TRF check matrix, export
    shapes, and comparison technique). For each check, open its grounding
    document before writing any finding that cites it.
-4. **Intake.** Ask the user: Do they have Search Console access or can they
-   export Performance data? What is the drop's approximate start date? Have
-   they made recent site changes (redesign, migration, template change,
-   deploy)? Without at least an approximate start date, the rest of the
-   workflow can only produce generic guidance.
+4. **Intake.** Before asking the user for exports, probe for direct access:
+   `"$ROOT/skills/shared/scripts/gsc_probe.py" --list-sites` (see
+   `../shared/integrations.md`). If the property is listed, pull Performance
+   data yourself with `--analytics` (by date for the shape, by page and query
+   for the deltas) and use `--inspect` on affected URLs for Google's own
+   coverage verdicts. Otherwise ask the user: Do they have Search Console
+   access or can they export Performance data? What is the drop's approximate
+   start date? Have they made recent site changes (redesign, migration,
+   template change, deploy)? Without at least an approximate start date, the
+   rest of the workflow can only produce generic guidance.
 5. **Classify the drop pattern (TRF-01).** Using exported or described data,
    determine whether clicks alone dropped or clicks and impressions dropped
    together, and the shape over time (sudden cliff, slow decay, seasonal

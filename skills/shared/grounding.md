@@ -87,3 +87,9 @@ python3 "$ROOT/skills/shared/scripts/extract_signals.py" path/to/page.html --bas
 Cache every script result for the session and reuse it. A URL is fetched at
 most once per audit, across all skills — see [targets.md](./targets.md) for the
 sampling and politeness rules.
+
+Two further scripts, `cwv_field_data.py` and `gsc_probe.py`, need credentials
+and unlock the checks a crawl cannot answer — Core Web Vitals field data and
+Search Console's own index and rich-results verdicts. What they require and
+when to use them is in [integrations.md](./integrations.md); when the
+credentials are absent, the corresponding checks stay in "Checks not run".
