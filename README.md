@@ -28,9 +28,9 @@ frontmatter, source citations, and bundle-relative cross-links.
 | `fundamentals/` | 9 | SEO starter guide, how Search works, helpful content, AI optimization |
 | `crawling-indexing/` | 24 | Sitemaps, robots.txt, Googlebot, canonicalization, AMP, JavaScript SEO, redirects |
 | `appearance/` | 31 | Search appearance, ranking systems, page experience, rich results |
-| `appearance/structured-data/` | 40 | Every structured data type reference (Article, Product, Recipe, Event, …) |
+| `appearance/structured-data/` | 38 | Every structured data type reference (Article, Product, Recipe, Event, …) |
 | `monitor-debug/` | 7 | Search Console, traffic-drop debugging, search operators |
-| `monitor-debug/security/` | 4 | Malware, social engineering, Safe Browsing |
+| `monitor-debug/security/` | 5 | Malware, social engineering, Safe Browsing |
 | `specialty/` | 15 | Ecommerce, international sites, explicit-content guidelines |
 | `skills/` | — | Claude Code audit skills grounded in the concepts above |
 
@@ -97,7 +97,7 @@ Then ask for what you need:
 | `google-search-audit` | Router: runs the full pipeline or dispatches to one skill below, and merges results into a single scored report |
 | `search-essentials` | Indexing eligibility (Googlebot access, status, indexable content) and the spam policies |
 | `crawling-indexing` | robots.txt, sitemaps, canonicals, redirects, robots rules, JavaScript, mobile, hreflang |
-| `structured-data` | JSON-LD and microdata against all 39 structured-data type references, plus markup policies |
+| `structured-data` | JSON-LD and microdata against all 38 structured-data type references, plus markup policies |
 | `seo-fundamentals` | The SEO starter guide: URLs, duplicates, content, links, images |
 | `search-appearance` | Titles, snippets, favicons, site names, page experience, ranking-systems context |
 | `traffic-drops` | Diagnosing a fall in Search traffic, including Search Console export analysis |
