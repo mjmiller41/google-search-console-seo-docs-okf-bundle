@@ -1,0 +1,35 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "search-console-docs-bundle",
+  "owner": {
+    "name": "Michael Miller",
+    "url": "https://github.com/mjmiller41"
+  },
+  "metadata": {
+    "description": "Google Search Central documentation mirrored as an OKF knowledge bundle, with audit skills grounded in it.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "google-search-audit",
+      "source": "./",
+      "description": "Seven skills that audit a live site or a pre-publish codebase against Google's own Search documentation, citing the source document for every finding.",
+      "category": "seo",
+      "author": {
+        "name": "Michael Miller",
+        "url": "https://github.com/mjmiller41"
+      },
+      "homepage": "https://github.com/mjmiller41/google-search-console-seo-docs-okf-bundle",
+      "keywords": [
+        "seo",
+        "google-search",
+        "search-console",
+        "site-audit",
+        "structured-data",
+        "robots-txt",
+        "sitemap",
+        "traffic-drops"
+      ]
+    }
+  ]
+}

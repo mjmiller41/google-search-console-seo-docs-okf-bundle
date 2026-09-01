@@ -32,6 +32,7 @@ frontmatter, source citations, and bundle-relative cross-links.
 | `monitor-debug/` | 7 | Search Console, traffic-drop debugging, search operators |
 | `monitor-debug/security/` | 4 | Malware, social engineering, Safe Browsing |
 | `specialty/` | 15 | Ecommerce, international sites, explicit-content guidelines |
+| `skills/` | — | Claude Code audit skills grounded in the concepts above |
 
 Start at [`index.md`](index.md) for progressive disclosure, or open `viz.html`
 in a browser for an interactive graph of all 157 concepts and 791 cross-links.
@@ -73,6 +74,44 @@ okf validate --bundle . --strict   # lint frontmatter, footnotes, and link targe
 okf index --bundle .               # regenerate every index.md
 okf viz --bundle .                 # rebuild the interactive graph
 ```
+
+## Claude Code plugin: auditing a site against these docs
+
+The repository is also a Claude Code plugin. Its skills audit a website — or a
+codebase that has not shipped yet — against the documentation mirrored here,
+and cite the specific Google document behind every finding.
+
+```
+/plugin marketplace add mjmiller41/google-search-console-seo-docs-okf-bundle
+/plugin install google-search-audit@search-console-docs-bundle
+```
+
+Then ask for what you need:
+
+> Audit https://example.com for Google Search
+> Check this repo before I launch — will Google index it properly?
+> Why did my search traffic drop last month? I have the Search Console export.
+
+| Skill | Audits |
+| :--- | :--- |
+| `google-search-audit` | Router: runs the full pipeline or dispatches to one skill below, and merges results into a single scored report |
+| `search-essentials` | Indexing eligibility (Googlebot access, status, indexable content) and the spam policies |
+| `crawling-indexing` | robots.txt, sitemaps, canonicals, redirects, robots rules, JavaScript, mobile, hreflang |
+| `structured-data` | JSON-LD and microdata against all 39 structured-data type references, plus markup policies |
+| `seo-fundamentals` | The SEO starter guide: URLs, duplicates, content, links, images |
+| `search-appearance` | Titles, snippets, favicons, site names, page experience, ranking-systems context |
+| `traffic-drops` | Diagnosing a fall in Search traffic, including Search Console export analysis |
+
+Each skill works against a live URL or a local directory. In static mode it
+analyzes build output (or templates, saying so) and lists what it could not
+test without a server, rather than guessing.
+
+**Why the skills stay current.** They contain no copied documentation — no
+thresholds, no property lists, no policy text. A check names the concept
+document that answers it, and the model reads that document at runtime. The
+weekly sync updates the concepts, so the audits follow Google's guidance
+without the skills being rewritten. Requires `python3` and no third-party
+packages; the helper scripts are standard library only.
 
 ## Keeping the bundle current
 
