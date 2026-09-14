@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-14T11:36:21Z'
 sources:
 - id: google-speakable
   resource: https://developers.google.com/search/docs/appearance/structured-data/speakable
   title: Speakable (Article, WebPage) structured data (BETA)
   author: Google Search Central (Google LLC)
-  last_modified: '2025-12-10T00:00:00Z'
+  last_modified: '2026-09-08T00:00:00Z'
 ---
 
 # Speakable (Article, WebPage) structured data (BETA)
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/speakable](https://developers.google.com/search/docs/appearance/structured-data/speakable). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-speakable]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/speakable](https://developers.google.com/search/docs/appearance/structured-data/speakable). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-08.[^google-speakable]
 
 > This feature is in beta and subject to change. We're currently developing this feature and you may see changes in requirements or guidelines.
 
@@ -150,7 +150,7 @@ If you're having trouble implementing or debugging structured data, here are som
 - You might have an error in your structured data. Check the [list of structured data errors](https://support.google.com/webmasters/answer/13300873) and the [Unparsable structured data report](https://support.google.com/webmasters/answer/9166415).
 - If you received a structured data manual action against your page, the structured data on the page will be ignored (although the page can still appear in Google Search results). To fix [structured data issues](https://support.google.com/webmasters/answer/9044175#zippy=%2Cstructured-data-issue), use the [Manual Actions report](https://support.google.com/webmasters/answer/9044175).
 - Review the [guidelines](https://developers.google.com/search/docs/appearance/structured-data/speakable/#guidelines) again to identify if your content isn't compliant with the guidelines. The problem can be caused by either spammy content or spammy markup usage. However, the issue may not be a syntax issue, and so the Rich Results Test won't be able to identify these issues.
-- [Troubleshoot missing rich results / drop in total rich results](https://support.google.com/webmasters/answer/13300208).
+- Structured data issues can affect how your site's content appears in search results. Use this [Troubleshoot missing rich results / drop in total rich results](https://support.google.com/webmasters/answer/13300208) guide to review a step-by-step approach to identify, fix, and validate these issues in Search Console.
 - Allow time for re-crawling and re-indexing. Remember that it may take several days after publishing a page for Google to find and crawl it. For general questions about crawling and indexing, check the [Google Search crawling and indexing FAQ](https://developers.google.com/search/help/crawling-index-faq).
 - Post a question in the [Google Search Central forum](https://support.google.com/webmasters/community).
 
@@ -172,4 +172,4 @@ In addition to `speakable` structured data, you can use other Google Assistant a
 
 # References & Citations
 
-[^google-speakable]: Google Search Central (2025). "Speakable (Article, WebPage) structured data (BETA)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/speakable. Retrieved 2026-09-01.
+[^google-speakable]: Google Search Central (2026). "Speakable (Article, WebPage) structured data (BETA)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/speakable. Retrieved 2026-09-14.

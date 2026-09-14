@@ -21,7 +21,7 @@ Mirrored knowledge corpus of Google Search Central (developers.google.com/search
 
 # Subdirectories
 
-* [Appearance](appearance/index.md) - Contains 31 concept(s).
+* [Appearance](appearance/index.md) - Contains 38 concept(s).
 * [Crawling Indexing](crawling-indexing/index.md) - Contains 24 concept(s).
 * [Essentials](essentials/index.md) - Contains 3 concept(s).
 * [Fundamentals](fundamentals/index.md) - Contains 9 concept(s).

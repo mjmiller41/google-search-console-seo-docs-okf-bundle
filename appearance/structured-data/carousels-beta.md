@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-14T11:36:21Z'
 sources:
 - id: google-carousels-beta
   resource: https://developers.google.com/search/docs/appearance/structured-data/carousels-beta
   title: Structured data carousels (beta)
   author: Google Search Central (Google LLC)
-  last_modified: '2026-01-21T00:00:00Z'
+  last_modified: '2026-09-11T00:00:00Z'
 ---
 
 # Structured data carousels (beta)
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/carousels-beta](https://developers.google.com/search/docs/appearance/structured-data/carousels-beta). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-01-21.[^google-carousels-beta]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/carousels-beta](https://developers.google.com/search/docs/appearance/structured-data/carousels-beta). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-11.[^google-carousels-beta]
 
 Google uses [structured data](/appearance/structured-data/intro-structured-data.md) to understand the content on the page and show that content in a richer appearance in search results, which is called a *rich result*. This guide focuses on a [new carousel rich result that's in beta](https://developers.google.com/search/blog/2024/02/search-experiences-in-eea), which is a list-like rich result that people can scroll horizontally to see more entities from a given site (also known as a host carousel). Each tile in the carousel may have information from your site about the price, rating, and images for entities on the page.
 
@@ -40,13 +40,13 @@ Here's how carousels can look in Google Search when you add `ItemList` markup in
 
 ## Feature availability
 
-This feature is in beta and you may see changes in requirements or guidelines, as we develop this feature. This feature is also only available in [European Economic Area](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)#:~:text=See%20EEA%20disambiguation%20page%20for,and%20Norway%3B%20excluding%20Switzerland).) (EEA) countries, Turkey, and South Africa, on both desktop and mobile devices. In EEA countries, this experience is available for queries related to hotels, vacation rentals, ground transportation, flights, local businesses, things to do (events, tours, and activities), and shopping. In Turkey, this experience is only available for queries related to hotels, vacation rentals, and local businesses. In South Africa, this experience is available for queries related to hotels, vacation rentals, things to do (events, tours, and activities), flights, shopping, food delivery, car hire, and bus booking.
+This feature is in beta and you may see changes in requirements or guidelines, as we develop this feature. This feature is also only available in [European Economic Area](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)) (EEA) countries, Türkiye, and South Africa, on both desktop and mobile devices. In EEA countries, this experience is available for queries related to hotels, vacation rentals, ground transportation, flights, local businesses, things to do (events, tours, and activities), and products. In Türkiye, this experience is only available for queries related to hotels, vacation rentals, and local businesses. In South Africa, this experience is available for queries related to hotels, vacation rentals, things to do (events, tours, and activities), flights, products, food delivery, car hire, and bus booking.
 
-If your business is based in the EEA or Turkey, or serves users in the EEA or Turkey, fill out the applicable form:
+If your business serves users in the EEA or Türkiye, fill out the applicable form:
 
-- For queries related to ground transportation, hotels, vacation rentals, local business, and things to do (for example, events, tours, and activities), use this [Google Search aggregator features interest form](https://support.google.com/websearch/contact/search_dma)
-- For flight features, use this [flight queries interest form](https://support.google.com/travel/contact/flight_queries_interest)
-- For shopping queries in [CSS Program countries](https://support.google.com/css-center/answer/7524491#Supported_countries), get started with the [Comparison Shopping Services (CSS) program](https://support.google.com/css-center/answer/7524491)
+- For ground transportation, hotel, vacation rental, local business, and things to do (for example, events, tours, and activities) queries, use this [Google Search aggregator features interest form](https://support.google.com/websearch/contact/search_aggregator_features).
+- For flight features, use this [flight queries interest form](https://support.google.com/travel/contact/flight_queries_interest).
+- For products queries in [CSS Program countries](https://support.google.com/css-center/answer/7524491#Supported_countries), get started with the [Comparison Shopping Services (CSS) program](https://support.google.com/css-center/answer/7524491).
 
 If your business is based in South Africa, fill out the [Google Search South African Badging and Refinement Chips Interest Form](https://docs.google.com/forms/d/e/1FAIpQLSeio2rTpaGNFohJQNKRDLQENyfK5avJFGJSx1nguoRwqsocIQ/viewform).
 
@@ -377,7 +377,7 @@ All of the carousel item types have the following properties in common.
 
 #### `LocalBusiness` (and subtypes)
 
-In addition to the [`ListItem` properties](https://developers.google.com/search/docs/appearance/structured-data/carousels-beta/#listitem), Google supports the following `LocalBusiness` properties (including its subtypes) for carousel rich results Nest these properties under `itemListElement.item`.
+In addition to the [`ListItem` properties](https://developers.google.com/search/docs/appearance/structured-data/carousels-beta/#listitem), Google supports the following `LocalBusiness` properties (including its subtypes) for carousel rich results. Nest these properties under `itemListElement.item`.
 
 <table>
 <colgroup><col/></colgroup>
@@ -1000,10 +1000,10 @@ If you're having trouble implementing or debugging structured data, here are som
 - You might have an error in your structured data. Check the [list of structured data errors](https://support.google.com/webmasters/answer/13300873) and the [Unparsable structured data report](https://support.google.com/webmasters/answer/9166415).
 - If you received a structured data manual action against your page, the structured data on the page will be ignored (although the page can still appear in Google Search results). To fix [structured data issues](https://support.google.com/webmasters/answer/9044175#zippy=%2Cstructured-data-issue), use the [Manual Actions report](https://support.google.com/webmasters/answer/9044175).
 - Review the [guidelines](https://developers.google.com/search/docs/appearance/structured-data/carousels-beta/#guidelines) again to identify if your content isn't compliant with the guidelines. The problem can be caused by either spammy content or spammy markup usage. However, the issue may not be a syntax issue, and so the Rich Results Test won't be able to identify these issues.
-- [Troubleshoot missing rich results / drop in total rich results](https://support.google.com/webmasters/answer/13300208).
+- Structured data issues can affect how your site's content appears in search results. Use this [Troubleshoot missing rich results / drop in total rich results](https://support.google.com/webmasters/answer/13300208) guide to review a step-by-step approach to identify, fix, and validate these issues in Search Console.
 - Allow time for re-crawling and re-indexing. Remember that it may take several days after publishing a page for Google to find and crawl it. For general questions about crawling and indexing, check the [Google Search crawling and indexing FAQ](https://developers.google.com/search/help/crawling-index-faq).
 - Post a question in the [Google Search Central forum](https://support.google.com/webmasters/community).
 
 # References & Citations
 
-[^google-carousels-beta]: Google Search Central (2026). "Structured data carousels (beta)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/carousels-beta. Retrieved 2026-09-01.
+[^google-carousels-beta]: Google Search Central (2026). "Structured data carousels (beta)". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/carousels-beta. Retrieved 2026-09-14.

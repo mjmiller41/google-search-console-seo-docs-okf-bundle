@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-14T11:36:21Z'
 sources:
 - id: google-preferred-sources
   resource: https://developers.google.com/search/docs/appearance/preferred-sources
   title: Help your readers find your site through preferred sources in Google Search
   author: Google Search Central (Google LLC)
-  last_modified: '2026-08-20T00:00:00Z'
+  last_modified: '2026-09-10T00:00:00Z'
 ---
 
 # Help your readers find your site through preferred sources in Google Search
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/preferred-sources](https://developers.google.com/search/docs/appearance/preferred-sources). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-08-20.[^google-preferred-sources]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/preferred-sources](https://developers.google.com/search/docs/appearance/preferred-sources). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-10.[^google-preferred-sources]
 
 If you're a website owner, you can help your audience find your publication as a preferred source in Google Search. When a user selects your site as a preferred source, your content is more likely to appear in "[Top Stories](https://support.google.com/websearch/answer/16379181)", highlighted with a "preferred" badge. In AI Mode and AI Overviews, your content can be highlighted with a "preferred" badge for users who have selected your site as a preferred source.
 
@@ -53,7 +53,7 @@ Here's how it'll look:
 
 To embed the JavaScript button on your web page, do the following:
 
-1.  Add the following `<script>` tag to your web page (preferably in the `<head>` element), which loads the Preferred Sources library.
+1.  Add the following `<script>` tag to your web page (preferably in the `<head>` element), which loads the preferred sources library.
 
     ``` devsite-click-to-copy
     <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
@@ -67,7 +67,7 @@ To embed the JavaScript button on your web page, do the following:
 
 #### Set the button theme
 
-By default, the "Add to Preferred Sources" button appears in a light theme. To adjust the theme, add the `data-theme` data attribute to your `<div>` element and set it to either `light` or `dark`:
+By default, the "Add to preferred sources" button appears in a light theme. To adjust the theme, add the `data-theme` data attribute to your `<div>` element and set it to either `light` or `dark`:
 
 ``` devsite-click-to-copy
 <div google-add-preferred-source-btn data-theme="dark"></div>
@@ -75,7 +75,7 @@ By default, the "Add to Preferred Sources" button appears in a light theme. To a
 
 #### Override the button language
 
-By default, the "Add to Preferred Sources" button displays in the user's language based on their browser settings. To override this behavior, add the `data-lang` data attribute to your `<div>` element and set it to the language code you'd prefer (download the [list of supported language codes](https://developers.google.com/static/search/docs/appearance/preferred-sources-languages.csv)):
+By default, the "Add to preferred sources" button displays in the user's language based on their browser settings. To override this behavior, add the `data-lang` data attribute to your `<div>` element and set it to the language code you'd prefer (download the [list of supported language codes](https://developers.google.com/static/search/docs/appearance/preferred-sources-languages.csv)):
 
 ``` devsite-click-to-copy
 <div google-add-preferred-source-btn data-lang="en"></div>
@@ -87,7 +87,7 @@ By default, the "Add to Preferred Sources" button displays in the user's languag
 
 By default, the standard JavaScript button automatically scans the DOM for elements with the `google-add-preferred-source-btn` attribute and renders the standard badge. However, for custom integrations where you want to trigger the flow from your own UI elements or application milestones, you can initialize the client programmatically and bind the flow to custom triggers.
 
-When integrating the Preferred Sources library into custom user interfaces, application milestones, or modern framework applications, you can take full programmatic control over runtime settings and flow initiation using our JavaScript SDK. We provide two distinct integration approaches depending on your tooling and architecture: ES Module imports (ESM) and standard script callback queues (IIFE). Both distribution models expose identical capabilities and methods.
+When integrating the preferred sources library into custom user interfaces, application milestones, or modern framework applications, you can take full programmatic control over runtime settings and flow initiation using our JavaScript SDK. We provide two distinct integration approaches depending on your tooling and architecture: ES Module imports (ESM) and standard script callback queues (IIFE). Both distribution models expose identical capabilities and methods.
 
 #### ES Module imports
 
@@ -141,7 +141,7 @@ Then use the global `PREFERRED_SOURCE` callback queue to initialize options and 
 </script>
 ```
 
-For interactive frontend and backend implementations showcasing live usage across buttons, declarative containers, IIFE scripts, and ES Module bundles, explore the [Preferred Sources demo](https://reader-revenue-demo.ue.r.appspot.com/preferred-sources/esm).
+For interactive frontend and backend implementations showcasing live usage across buttons, declarative containers, IIFE scripts, and ES Module bundles, explore the [preferred sources demo](https://reader-revenue-demo.ue.r.appspot.com/preferred-sources/esm).
 
 ### Deeplink implementation
 
@@ -179,4 +179,4 @@ You can design your own custom promotion badge or download official translated g
 
 # References & Citations
 
-[^google-preferred-sources]: Google Search Central (2026). "Help your readers find your site through preferred sources in Google Search". *Google for Developers*. https://developers.google.com/search/docs/appearance/preferred-sources. Retrieved 2026-09-01.
+[^google-preferred-sources]: Google Search Central (2026). "Help your readers find your site through preferred sources in Google Search". *Google for Developers*. https://developers.google.com/search/docs/appearance/preferred-sources. Retrieved 2026-09-14.

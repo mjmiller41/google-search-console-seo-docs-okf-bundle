@@ -1,5 +1,8 @@
 # Directory Update Log
 
+## 2026-09-14
+* **Update**: Synced bundle against Google Search Central documentation: added 7 concept(s), refreshed 32 concept(s)
+
 ## 2026-09-01
 * **Update**: Added optional integrations: Core Web Vitals field data via CrUX/PageSpeed (cwv_field_data.py) and Search Console index coverage, rich-results verdicts, and analytics (gsc_probe.py), closing most Checks-not-run gaps
 * **Update**: Added the google-search-audit Claude Code plugin: seven skills that audit a live site or pre-publish codebase against the mirrored documentation, with every finding cited to its concept

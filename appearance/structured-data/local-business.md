@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-14T11:36:21Z'
 sources:
 - id: google-local-business
   resource: https://developers.google.com/search/docs/appearance/structured-data/local-business
   title: Local business (LocalBusiness) structured data
   author: Google Search Central (Google LLC)
-  last_modified: '2025-12-10T00:00:00Z'
+  last_modified: '2026-09-08T00:00:00Z'
 ---
 
 # Local business (LocalBusiness) structured data
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/local-business](https://developers.google.com/search/docs/appearance/structured-data/local-business). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-local-business]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/structured-data/local-business](https://developers.google.com/search/docs/appearance/structured-data/local-business). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-08.[^google-local-business]
 
 When users search for businesses on Google Search or Maps, Search results may display a prominent Google knowledge panel with details about a business that matched the query. When users search for a type of business (for example, "best NYC restaurants"), they may see a carousel of businesses related to the query. With Local Business structured data, you can tell Google about business hours, different departments within a business, reviews (if your site captures reviews about other businesses), and more. If you want to help users to make a reservation or place an order directly in Search results, you can use the [Maps Booking API](https://developers.google.com/maps-booking/guides/starter-integration/overview) to enable bookings, payments, and other actions.
 
@@ -650,10 +650,10 @@ If you're having trouble implementing or debugging structured data, here are som
 - You might have an error in your structured data. Check the [list of structured data errors](https://support.google.com/webmasters/answer/13300873) and the [Unparsable structured data report](https://support.google.com/webmasters/answer/9166415).
 - If you received a structured data manual action against your page, the structured data on the page will be ignored (although the page can still appear in Google Search results). To fix [structured data issues](https://support.google.com/webmasters/answer/9044175#zippy=%2Cstructured-data-issue), use the [Manual Actions report](https://support.google.com/webmasters/answer/9044175).
 - Review the [guidelines](https://developers.google.com/search/docs/appearance/structured-data/local-business/#guidelines) again to identify if your content isn't compliant with the guidelines. The problem can be caused by either spammy content or spammy markup usage. However, the issue may not be a syntax issue, and so the Rich Results Test won't be able to identify these issues.
-- [Troubleshoot missing rich results / drop in total rich results](https://support.google.com/webmasters/answer/13300208).
+- Structured data issues can affect how your site's content appears in search results. Use this [Troubleshoot missing rich results / drop in total rich results](https://support.google.com/webmasters/answer/13300208) guide to review a step-by-step approach to identify, fix, and validate these issues in Search Console.
 - Allow time for re-crawling and re-indexing. Remember that it may take several days after publishing a page for Google to find and crawl it. For general questions about crawling and indexing, check the [Google Search crawling and indexing FAQ](https://developers.google.com/search/help/crawling-index-faq).
 - Post a question in the [Google Search Central forum](https://support.google.com/webmasters/community).
 
 # References & Citations
 
-[^google-local-business]: Google Search Central (2025). "Local business (LocalBusiness) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/local-business. Retrieved 2026-09-01.
+[^google-local-business]: Google Search Central (2026). "Local business (LocalBusiness) structured data". *Google for Developers*. https://developers.google.com/search/docs/appearance/structured-data/local-business. Retrieved 2026-09-14.
