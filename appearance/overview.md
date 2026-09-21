@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-14T11:36:21Z'
+  at: '2026-09-21T11:49:48Z'
 sources:
 - id: google-appearance
   resource: https://developers.google.com/search/docs/appearance
   title: Overview of Search appearance topics
   author: Google Search Central (Google LLC)
-  last_modified: '2026-09-10T00:00:00Z'
+  last_modified: '2026-09-16T00:00:00Z'
 ---
 
 # Overview of Search appearance topics
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance](https://developers.google.com/search/docs/appearance). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-10.[^google-appearance]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance](https://developers.google.com/search/docs/appearance). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-16.[^google-appearance]
 
 The topics in this section describe how you can influence how your website appears in Google Search.
 
@@ -43,6 +43,7 @@ The topics in this section describe how you can influence how your website appea
 <td>
 <ul>
 <li><a href="/appearance/aggregator-features.md">Regional differences in Search experience</a></li>
+<li><a href="/appearance/search-profiles.md">Search profiles</a></li>
 <li><a href="/appearance/site-names.md">Site names</a></li>
 <li><a href="/appearance/sitelinks.md">Sitelinks</a></li>
 <li><a href="/appearance/snippet.md">Snippets</a></li>
@@ -144,4 +145,4 @@ To ensure the best experience for users, Google pilots some features with a limi
 
 # References & Citations
 
-[^google-appearance]: Google Search Central (2026). "Overview of Search appearance topics". *Google for Developers*. https://developers.google.com/search/docs/appearance. Retrieved 2026-09-14.
+[^google-appearance]: Google Search Central (2026). "Overview of Search appearance topics". *Google for Developers*. https://developers.google.com/search/docs/appearance. Retrieved 2026-09-21.

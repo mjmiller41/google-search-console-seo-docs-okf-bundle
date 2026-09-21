@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-14T11:36:21Z'
+  at: '2026-09-21T11:49:48Z'
 sources:
 - id: google-preferred-sources
   resource: https://developers.google.com/search/docs/appearance/preferred-sources
   title: Help your readers find your site through preferred sources in Google Search
   author: Google Search Central (Google LLC)
-  last_modified: '2026-09-10T00:00:00Z'
+  last_modified: '2026-09-18T00:00:00Z'
 ---
 
 # Help your readers find your site through preferred sources in Google Search
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/preferred-sources](https://developers.google.com/search/docs/appearance/preferred-sources). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-10.[^google-preferred-sources]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/preferred-sources](https://developers.google.com/search/docs/appearance/preferred-sources). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-18.[^google-preferred-sources]
 
 If you're a website owner, you can help your audience find your publication as a preferred source in Google Search. When a user selects your site as a preferred source, your content is more likely to appear in "[Top Stories](https://support.google.com/websearch/answer/16379181)", highlighted with a "preferred" badge. In AI Mode and AI Overviews, your content can be highlighted with a "preferred" badge for users who have selected your site as a preferred source.
 
@@ -29,7 +29,9 @@ If you're a website owner, you can help your audience find your publication as a
 
 ## Feature availability
 
-The preferred sources feature is available globally for the "Top Stories" feature in all languages where Google Search is available. Preferred sources can also appear in AI Mode and AI Overviews in all languages and locales where those features are available.
+The preferred sources feature is available globally for the "Top Stories" feature in all languages where Google Search is available.
+
+Preferred sources can also appear in AI Mode and AI Overviews in all languages and locales where those features are available. To make your site eligible for display as a preferred source in these features, you must make sure your site is [included in Search generative AI features in Search Console](https://support.google.com/webmasters/answer/16908024).
 
 Only domain-level and subdomain-level sites are eligible to appear in the [source preferences tool](https://www.google.com/preferences/source). For example, `https://www.example.com/` and `https://code.example.com/` are eligible for preferred sources, but the subdirectory `https://www.example.com/blog` isn't eligible.
 
@@ -179,4 +181,4 @@ You can design your own custom promotion badge or download official translated g
 
 # References & Citations
 
-[^google-preferred-sources]: Google Search Central (2026). "Help your readers find your site through preferred sources in Google Search". *Google for Developers*. https://developers.google.com/search/docs/appearance/preferred-sources. Retrieved 2026-09-14.
+[^google-preferred-sources]: Google Search Central (2026). "Help your readers find your site through preferred sources in Google Search". *Google for Developers*. https://developers.google.com/search/docs/appearance/preferred-sources. Retrieved 2026-09-21.

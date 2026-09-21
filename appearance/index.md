@@ -3,6 +3,7 @@
 # Reference
 
 * [A guide to Google Search ranking systems](ranking-systems-guide.md) - Explore some of Google Search's more notable ranking systems, including systems that are part of our core ranking systems, which are the underlying technologies that produce search results in response to queries.
+* [Add a Search profile badge to your website](search-profiles.md) - Learn how to add a Search profile badge to your website to help your audience find your Search profile.
 * [Aggregator unit in Google Search](aggregator-unit.md) - Learn how the aggregator unit works in Google Search and how eligible businesses can express interest.
 * [AI features and your website](ai-features.md) - Google Search's AI features can help users find your website. Learn more about how AI features work in Search and how to approach your content's inclusion in these experiences.
 * [Avoid intrusive interstitials and dialogs](avoid-intrusive-interstitials.md) - Use banners instead of interstitials and large dialogs on your website.

@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-14T11:36:21Z'
+  at: '2026-09-21T11:49:48Z'
 sources:
 - id: google-aggregator-features
   resource: https://developers.google.com/search/docs/appearance/aggregator-features
   title: Regional differences in Search experience
   author: Google Search Central (Google LLC)
-  last_modified: '2026-09-08T00:00:00Z'
+  last_modified: '2026-09-18T00:00:00Z'
 ---
 
 # Regional differences in Search experience
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/aggregator-features](https://developers.google.com/search/docs/appearance/aggregator-features). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-08.[^google-aggregator-features]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/aggregator-features](https://developers.google.com/search/docs/appearance/aggregator-features). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-18.[^google-aggregator-features]
 
 Google is evolving the search results page for certain types of queries to provide new opportunities for Vertical Search Services (VSS), Comparison Shopping Services (CSS), direct suppliers, and content providers.
 
@@ -56,7 +56,7 @@ EEA South Africa Türkiye Car hire Finance Flights Food delivery Ground transpor
 <p>EEA</p>
 </td>
 <td>
-<p>Hotels, flights, ground transportation, and products</p>
+<p>Hotels, flights, ground transportation, local businesses, and products</p>
 </td>
 </tr>
 <tr>
@@ -75,7 +75,7 @@ EEA South Africa Türkiye Car hire Finance Flights Food delivery Ground transpor
 <p>EEA</p>
 </td>
 <td>
-<p>Hotels, flights, ground transportation, and products</p>
+<p>Hotels, flights, ground transportation, local businesses, and products</p>
 </td>
 </tr>
 <tr>
@@ -203,4 +203,4 @@ EEA South Africa Türkiye Car hire Finance Flights Food delivery Ground transpor
 
 # References & Citations
 
-[^google-aggregator-features]: Google Search Central (2026). "Regional differences in Search experience". *Google for Developers*. https://developers.google.com/search/docs/appearance/aggregator-features. Retrieved 2026-09-14.
+[^google-aggregator-features]: Google Search Central (2026). "Regional differences in Search experience". *Google for Developers*. https://developers.google.com/search/docs/appearance/aggregator-features. Retrieved 2026-09-21.

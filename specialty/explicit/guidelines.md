@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:31:43Z'
+  at: '2026-09-21T11:49:48Z'
 sources:
 - id: google-guidelines
   resource: https://developers.google.com/search/docs/specialty/explicit/guidelines
   title: Guidelines for sites with explicit content
   author: Google Search Central (Google LLC)
-  last_modified: '2025-12-10T00:00:00Z'
+  last_modified: '2026-09-17T00:00:00Z'
 ---
 
 # Guidelines for sites with explicit content
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/specialty/explicit/guidelines](https://developers.google.com/search/docs/specialty/explicit/guidelines). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-10.[^google-guidelines]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/specialty/explicit/guidelines](https://developers.google.com/search/docs/specialty/explicit/guidelines). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-17.[^google-guidelines]
 
 Many users prefer not to have explicit content shown in their search results, and Google has systems in place to help users filter explicit content. If your site hosts explicit or adult content, you can help Google understand the nature of your site and content, which can help Google to more accurately categorize your site and ensure user preference regarding explicit content.
 
@@ -66,6 +66,7 @@ By following these best practices, you not only help ensure that users see the r
 3.  [Allow Googlebot to crawl without age gate](https://developers.google.com/search/docs/specialty/explicit/guidelines/#allow-googlebot-to-crawl).
 4.  [Group explicit pages in a separate domain or subdomain](https://developers.google.com/search/docs/specialty/explicit/guidelines/#group-explicit-pages).
 5.  [Mark specific pages as explicit with metadata](https://developers.google.com/search/docs/specialty/explicit/guidelines/#mark-specific-pages).
+6.  [For ecommerce sites: label adult products in ecommerce feeds or markup](https://developers.google.com/search/docs/specialty/explicit/guidelines/#label-adult-products).
 
 ### Prevent user-generated harmful content on your platform
 
@@ -122,6 +123,10 @@ Google also recognizes `<meta name="rating" content="RTA-5042-1996-1400-1577-RTA
 
 If you have a range of videos on your site, including content appropriate for all ages as well as sexually explicit or content that contains graphic violence, make use of the [`<video:family_friendly>` tag in your video sitemap](/crawling-indexing/sitemaps/video-sitemaps.md). You only need to use this tag (set to `no`) for videos that are explicit. This helps Google understand which videos on your site shouldn't appear when SafeSearch filtering is enabled.
 
+### For Google Shopping features: label adult products in ecommerce feeds or markup
+
+If you're optimizing your product listings to appear in Google Shopping features and your products are considered adult-oriented according to Google's [adult-oriented content policy](https://support.google.com/merchants/answer/12073010#res), label them in your Merchant Center feeds with the [`adult` attribute](https://support.google.com/merchants/answer/6324508) or with [`hasAdultConsideration`](/appearance/structured-data/merchant-listing.md) structured data markup. This label doesn't affect your site's visibility in organic web search results.
+
 # References & Citations
 
-[^google-guidelines]: Google Search Central (2025). "Guidelines for sites with explicit content". *Google for Developers*. https://developers.google.com/search/docs/specialty/explicit/guidelines. Retrieved 2026-09-01.
+[^google-guidelines]: Google Search Central (2026). "Guidelines for sites with explicit content". *Google for Developers*. https://developers.google.com/search/docs/specialty/explicit/guidelines. Retrieved 2026-09-21.

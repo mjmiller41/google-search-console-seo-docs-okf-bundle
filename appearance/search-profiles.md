@@ -1,0 +1,76 @@
+---
+type: Reference
+title: Add a Search profile badge to your website
+description: Learn how to add a Search profile badge to your website to help your audience find your Search profile.
+resource: https://developers.google.com/search/docs/appearance/search-profiles
+tags:
+- google-search
+- documentation
+- appearance
+status: stable
+generated:
+  by: okf-sync/1.0
+  at: '2026-09-21T11:49:48Z'
+sources:
+- id: google-search-profiles
+  resource: https://developers.google.com/search/docs/appearance/search-profiles
+  title: Add a Search profile badge to your website
+  author: Google Search Central (Google LLC)
+  last_modified: '2026-09-16T00:00:00Z'
+---
+
+# Add a Search profile badge to your website
+
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/appearance/search-profiles](https://developers.google.com/search/docs/appearance/search-profiles). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-16.[^google-search-profiles]
+
+If you're a website owner, publisher, or creator with a Search profile, you can add a badge to your website to help your audience find your Search profile.
+
+![Example of a Search profile badge on a website and a Search profile on Google](https://developers.google.com/static/search/docs/images/search-profile-badge.png)
+
+## How Search profiles work on Google
+
+A [Search profile](https://support.google.com/websearch/answer/16904498) brings together your content from across the web and social platforms into a single destination on Google. When readers follow your Search profile, it makes your content that's linked on your Search profile (such as your content on Instagram, TikTok, YouTube, X, Facebook, and your website) more likely to appear for your audience on [Google Discover](/appearance/google-discover.md).
+
+## Add a Search profile badge to your website
+
+After you've [claimed your Search profile](https://support.google.com/websearch/answer/16904498), you can encourage your audience to find your content from across the web by adding a Search profile badge to your website:
+
+1.  **Find your Search profile URL**. Use the following URL pattern, replacing `handle` with your profile handle:
+
+    ``` devsite-click-to-copy
+    https://profile.google.com/@handle
+    ```
+
+2.  [**Download the Search profile badge assets**](https://developers.google.com/static/search/shared/search-profile-website-badges.zip) and follow [brand guidelines](https://developers.google.com/search/docs/appearance/search-profiles/#follow-brand-guidelines-and-best-practices) when deciding where to place the badge on your site.
+
+3.  **Add the following HTML snippet to your site:**
+
+    ``` devsite-click-to-copy
+    <a href="https://profile.google.com/@example"
+       aria-label="Find us on Google Search">
+      <img src="/path/to/google-search-badge.svg" alt="Google Search">
+    </a>
+    ```
+
+    **Alternative option:** If you prefer a text link in article bylines, newsletters, or bio links, use the following snippet:
+
+    ``` devsite-click-to-copy
+    <a href="https://profile.google.com/@example">Find us on Google Search</a>
+    ```
+
+## Follow brand guidelines and best practices
+
+When adding a Search profile badge to your site, follow these brand guidelines and best practices:
+
+- **Ensure accessible touch targets:** Keep the clickable target at least 48 × 48 dp on Android and 44 × 44 px on iOS and web.
+- **Preserve logo integrity:** If you're using the official assets from Google, don't stretch, distort, rotate, or alter the colors of the "Super G" icon and Search profile button.
+- **Avoid mixing and matching monochrome badges with colorful badges:** For example, if you're using monochrome for all icons, use the monochrome "G" icon.
+- **Maintain badge clarity:** If you want to use both the Search profile badge and [Preferred Sources badge](/appearance/preferred-sources.md) together, use the higher emphasis Search profile button with the label for clarity and distinction from the Preferred Sources badge. Don't use the "Super G" icon for the Search profile paired with the Preferred Sources badge.
+
+## Troubleshooting
+
+If you're having trouble adding the badge to your website, post a question in the [Google Search Central Help Community](https://support.google.com/webmasters/community).
+
+# References & Citations
+
+[^google-search-profiles]: Google Search Central (2026). "Add a Search profile badge to your website". *Google for Developers*. https://developers.google.com/search/docs/appearance/search-profiles. Retrieved 2026-09-21.

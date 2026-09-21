@@ -1,5 +1,8 @@
 # Directory Update Log
 
+## 2026-09-21
+* **Update**: Synced bundle against Google Search Central documentation: added 1 concept(s), refreshed 7 concept(s)
+
 ## 2026-09-14
 * **Update**: Synced bundle against Google Search Central documentation: added 7 concept(s), refreshed 32 concept(s)
 

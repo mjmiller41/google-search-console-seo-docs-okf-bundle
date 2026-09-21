@@ -10,18 +10,18 @@ tags:
 status: stable
 generated:
   by: okf-sync/1.0
-  at: '2026-09-01T14:55:35Z'
+  at: '2026-09-21T11:49:48Z'
 sources:
 - id: google-localized-versions
   resource: https://developers.google.com/search/docs/specialty/international/localized-versions
   title: Tell Google about localized versions of your page
   author: Google Search Central (Google LLC)
-  last_modified: '2025-12-22T00:00:00Z'
+  last_modified: '2026-09-21T00:00:00Z'
 ---
 
 # Tell Google about localized versions of your page
 
-> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/specialty/international/localized-versions](https://developers.google.com/search/docs/specialty/international/localized-versions). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2025-12-22.[^google-localized-versions]
+> Mirrored from the official Google Search Central documentation at [https://developers.google.com/search/docs/specialty/international/localized-versions](https://developers.google.com/search/docs/specialty/international/localized-versions). Page content, including any embedded figures, is authored by Google and was last updated by Google on 2026-09-21.[^google-localized-versions]
 
 If you have multiple versions of a page for different languages or regions, tell Google about these different variations. Doing so will help Google Search point users to the most appropriate version of your page by language or region.
 
@@ -53,7 +53,7 @@ Use `hreflang` to tell Google about the variations of your content, so that we c
 - Alternate URLs must be fully-qualified, including the transport method (http/https), so:  
   `https://example.com/foo`, **not** `//example.com/foo` or `/foo`
 - Alternate URLs do not need to be in the same domain.
-- If you have several alternate URLs targeted at users with the same language but in different locales, it's a good idea to also provide a catchall URL for geographically unspecified users of that language. For example, if you have specific URLs for English speakers in Ireland (`en-ie`), Canada (`en-ca`), and Australia (`en-au`), provide a generic English (`en`) page for searchers in the US, UK, and all other English-speaking locations. It can be one of the specific pages, if you choose.
+- If you have several alternate URLs targeted at users with the same language but in different locales, it's a good idea to also provide a catchall URL for geographically unspecified users of that language. For example, if you have specific URLs for English speakers in Ireland (`en-IE`), Canada (`en-CA`), and Australia (`en-AU`), provide a generic English (`en`) page for searchers in the US, UK, and all other English-speaking locations. It can be one of the specific pages, if you choose.
 - If two pages don't both point to each other, the tags will be ignored. This is so that someone on another site can't arbitrarily create a tag naming itself as an alternative version of one of your pages.
 - If it becomes difficult to maintain a complete set of bidirectional links for every language, you can omit some languages on some pages; Google will still process the ones that point to each other. However, it is important to link newly expanded language pages bidirectionally to the originating/dominant language(s). For example, if your site was originally created in French with URLs on `.fr`, it's more important to bidirectionally link newer Mexican (`.mx`) and Spanish (`.es`) pages to your strong `.fr` presence, rather than to bidirectionally link your new Spanish language variant pages (`.mx` and `.es`) to each other.
 - Consider adding a fallback page for unmatched languages, especially on language/country selectors or auto-redirecting home pages. Use the [the `x-default` value](https://developers.google.com/search/docs/specialty/international/localized-versions/#xdefault):  
@@ -130,9 +130,9 @@ Here is the HTML that would be in the `<head>` section of all the pages listed i
 ``` devsite-click-to-copy
 <head>
  <title>Widgets, Inc</title>
-  <link rel="alternate" hreflang="en-gb"
+  <link rel="alternate" hreflang="en-GB"
        href="https://en-gb.example.com/page.html" />
-  <link rel="alternate" hreflang="en-us"
+  <link rel="alternate" hreflang="en-US"
        href="https://en-us.example.com/page.html" />
   <link rel="alternate" hreflang="en"
        href="https://en.example.com/page.html" />
@@ -176,7 +176,7 @@ You must specify a set of `<url>`, `rel="alternate"`, and `hreflang` values for 
 Here is an example `Link:` header returned by a site that has three versions of a PDF file: one for English speakers, one for German speakers from Switzerland, and one for all other German speakers:
 
     Link: <https://example.com/file.pdf>; rel="alternate"; hreflang="en",
-          <https://de-ch.example.com/file.pdf>; rel="alternate"; hreflang="de-ch",
+          <https://de-ch.example.com/file.pdf>; rel="alternate"; hreflang="de-CH",
           <https://de.example.com/file.pdf>; rel="alternate"; hreflang="de"
 
 ### Sitemap
@@ -225,7 +225,7 @@ Here is the sitemap for those three pages:
                href="https://www.example.de/deutsch/page.html"/>
     <xhtml:link
                rel="alternate"
-               hreflang="de-ch"
+               hreflang="de-CH"
                href="https://www.example.de/schweiz-deutsch/page.html"/>
     <xhtml:link
                rel="alternate"
@@ -240,7 +240,7 @@ Here is the sitemap for those three pages:
                href="https://www.example.de/deutsch/page.html"/>
     <xhtml:link
                rel="alternate"
-               hreflang="de-ch"
+               hreflang="de-CH"
                href="https://www.example.de/schweiz-deutsch/page.html"/>
     <xhtml:link
                rel="alternate"
@@ -255,7 +255,7 @@ Here is the sitemap for those three pages:
                href="https://www.example.de/deutsch/page.html"/>
     <xhtml:link
                rel="alternate"
-               hreflang="de-ch"
+               hreflang="de-CH"
                href="https://www.example.de/schweiz-deutsch/page.html"/>
     <xhtml:link
                rel="alternate"
@@ -267,15 +267,15 @@ Here is the sitemap for those three pages:
 
 ## Supported language and region codes
 
-The `hreflang` attribute's value is comprised of one or optionally two values, separated by a dash. For example, `en-US`. The first code of the `hreflang` attribute is the language code (in [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) format) followed by an optional second code that represents the region code (in [ISO 3166-1 Alpha 2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) format) of an alternate URL. Only language codes listed in ISO 639-1 and region codes listed in ISO 3166-1 Alpha 2 are supported; other codes that aren't listed in those standards, such as es-419, aren't supported.
+The `hreflang` attribute's value is comprised of one or optionally two values, separated by a dash. For example, `en-US`. The first code of the `hreflang` attribute is the language code (in [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) format) followed by an optional second code that represents the region code (in [ISO 3166-1 Alpha 2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) format) of an alternate URL. Only language codes listed in ISO 639-1 and region codes listed in ISO 3166-1 Alpha 2 are supported; other codes that aren't listed in those standards, such as es-419, aren't supported. The `hreflang` value is case-insensitive; Google accepts lowercase and uppercase codes, but formatting region codes in uppercase (for example, `en-GB`) follows ISO 3166-1 Alpha 2 convention.
 
 > **Warning**: You can't specify the country code by itself. The first code stands for the language and Google doesn't automatically derive the language from a country code.
 
 To target different language speakers in Belgium, you might use the following language and region codes:
 
-- **Good (German for users in Belgium)**: `de-be`
-- **Good (Dutch for users in Belgium)**: `nl-be`
-- **Good (French for users in Belgium)**: `fr-be`
+- **Good (German for users in Belgium)**: `de-BE`
+- **Good (Dutch for users in Belgium)**: `nl-BE`
+- **Good (French for users in Belgium)**: `fr-BE`
 - **Bad because the first code is for language (`be` is the Belarusian language code)**: `be`
 
 To simplify your labeling, you can specify a language code by itself. For example:
@@ -300,9 +300,9 @@ There's no need to specify a language code for the `x-default` value; the page i
 To implement the `hreflang="x-default"` annotation, add an additional `link` tag to the existing `hreflang` annotations, and set the `href` attribute to the URL where you want your users to land if your site doesn't support their language. For example, an HTML implementation may look like this:
 
 ``` devsite-click-to-copy
-<link rel="alternate" href="https://example.com/en-gb" hreflang="en-gb" />
-<link rel="alternate" href="https://example.com/en-us" hreflang="en-us" />
-<link rel="alternate" href="https://example.com/en-au" hreflang="en-au" />
+<link rel="alternate" href="https://example.com/en-gb" hreflang="en-GB" />
+<link rel="alternate" href="https://example.com/en-us" hreflang="en-US" />
+<link rel="alternate" href="https://example.com/en-au" hreflang="en-AU" />
 <link rel="alternate" href="https://example.com/country-selector" hreflang="x-default" />
 ```
 
@@ -315,7 +315,7 @@ Here are the most common mistakes with `hreflang` usage:
 - **Missing return links**: If page X links to page Y, page Y must link back to page X. If this is not the case for all pages that use `hreflang` annotations, those annotations may be ignored or not interpreted correctly. For example, considering this link on `https://de.example.com/index.html`:
 
   ``` devsite-click-to-copy
-  <link rel="alternate" hreflang="en-gb" href="https://en-gb.example.com/index.html" />
+  <link rel="alternate" hreflang="en-GB" href="https://en-gb.example.com/index.html" />
   ```
 
   You must also have a `hreflang` link on `https://en-gb.example.com/index.html` that points back to the `de` version of the content:
@@ -337,4 +337,4 @@ There are many third-party tools available that you can use to debug `hreflang` 
 
 # References & Citations
 
-[^google-localized-versions]: Google Search Central (2025). "Tell Google about localized versions of your page". *Google for Developers*. https://developers.google.com/search/docs/specialty/international/localized-versions. Retrieved 2026-09-01.
+[^google-localized-versions]: Google Search Central (2026). "Tell Google about localized versions of your page". *Google for Developers*. https://developers.google.com/search/docs/specialty/international/localized-versions. Retrieved 2026-09-21.
